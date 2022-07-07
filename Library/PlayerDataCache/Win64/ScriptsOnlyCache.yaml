@@ -1,16 +1,27 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AdsController
     - Board
+    - CheaterMessage
+    - DestroyObj
     - ForCanvas
     - Ghost
+    - Music
     - Piece
+    - YG.InfoYG
+    - YG.LanguageYG
+    - YG.ViewingAds
+    - YG.YandexGame
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -49,34 +60,62 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 620}
+      Script: {instanceID: 628}
     - Class: 114
-      Script: {instanceID: 1516}
+      Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2134}
+      Script: {instanceID: 1466}
     - Class: 114
-      Script: {instanceID: 2256}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 2540}
+      Script: {instanceID: 1960}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2862}
+      Script: {instanceID: 2564}
     - Class: 114
-      Script: {instanceID: 3098}
+      Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 3346}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 4496}
+      Script: {instanceID: 3136}
+    - Class: 114
+      Script: {instanceID: 3382}
+    - Class: 114
+      Script: {instanceID: 3506}
+    - Class: 114
+      Script: {instanceID: 3716}
+    - Class: 114
+      Script: {instanceID: 3718}
+    - Class: 114
+      Script: {instanceID: 4554}
+    - Class: 114
+      Script: {instanceID: 4670}
+    - Class: 114
+      Script: {instanceID: 5002}
+    - Class: 114
+      Script: {instanceID: 5702}
+    - Class: 114
+      Script: {instanceID: 18704}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -104,16 +143,34 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5ab533713adae59372fb3e10a585c186
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AnimationPlayableAsset
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: bcaee4c2a83047257b5f47d6ed264b75
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: a306e12d896ddcca949923c805691027
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
   - hash:
       serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -134,10 +191,10 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: bcaee4c2a83047257b5f47d6ed264b75
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Toggle
+      Hash: 33a97aee6683f5fc629758d45c8f1e65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RewardedAd
   - hash:
       serializedVersion: 2
       Hash: 59ce5902048c1041729c804e2772b2ce
@@ -182,6 +239,18 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 2cd3d1620e5330fc5e5f81f2bc5aaf21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: InfoYG
+  - hash:
+      serializedVersion: 2
+      Hash: 323cc284470e19e828ebe7d22bfc4170
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: LanguageYG
+  - hash:
+      serializedVersion: 2
       Hash: 247c3c08ca61b0ca5b9d9851686e912f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -204,12 +273,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
@@ -236,16 +299,40 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: acfe2f717a283734266d0e5baf6f596e
+      Hash: 85471935085e219ebdd61c633e23c7e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ForCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 0c39b3e5fb8f9be16e328ae86b366667
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LanguageExample
+  - hash:
+      serializedVersion: 2
+      Hash: 0f608828f0891f6a9d31897224956a53
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Music
+  - hash:
+      serializedVersion: 2
+      Hash: bfd55c5a64f6323b1786627b2512e389
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: YandexGame
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 0f59ce04c53a7d0a3833b07fd9351c1e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugViewing
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -290,6 +377,12 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
+      Hash: c8a86410620387aa1ea6486ccac3f9d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: GraphicSettingsYG
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -300,12 +393,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
-  - hash:
-      serializedVersion: 2
-      Hash: a306e12d896ddcca949923c805691027
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: InputField
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -380,10 +467,22 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 5d215c0083623bd0196a2b76ef75a8c1
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OpenAuthorizationDialog
+  - hash:
+      serializedVersion: 2
+      Hash: a5e9ba810af91a9961b29b43380a0958
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Board
+  - hash:
+      serializedVersion: 2
+      Hash: df938b7e0adaaec2fab77f94ecab8ced
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsController
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -392,10 +491,22 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: a37c0e6379f97656cc94e5a75aad488b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaverTest
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 30681c61a5d96211bb55443d55efb865
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewResultLeaderboard
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -482,6 +593,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 3c7b2b3377dab3f6fe34d5d1398d60d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetPlayerData
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -512,10 +629,22 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchSceneTest
+  - hash:
+      serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: 8165e176265ccef96cc3cbfc4ac576c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheaterMessage
   - hash:
       serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
@@ -578,6 +707,12 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
+      Hash: b08cb5dd5616f753a70b16d29153b531
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyObj
+  - hash:
+      serializedVersion: 2
       Hash: 28cfb4bd305dd11c6326cc3ee7c14138
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.Experimental.U2D.Animation
@@ -596,10 +731,22 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 4f137c9fd0c51f185a9d97110603b6e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LogInStartMassage
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 066965fe58c258d03e3aae086f08f2ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: ImageLoadYG
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -612,6 +759,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: BufferManager
+  - hash:
+      serializedVersion: 2
+      Hash: d7a25007d79459bc406a4a7727527160
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: ViewingAds
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -642,7 +795,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: b3129b80881f64734c543cbfe0bc56ab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: YG
+    className: LeaderboardYG
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Zver/Desktop/Unity/NewTetris/GamePc/Idea.exe
+  playerPath: C:/Users/Zver/Desktop/NewTetris/GamePc/NewTetris.exe

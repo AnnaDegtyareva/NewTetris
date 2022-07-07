@@ -11,13 +11,13 @@ public class Ghost : MonoBehaviour
     public Vector3Int[] cells { get; private set; }
     public Vector3Int position { get; private set; }
 
-    private void Awake()
+    public void Awake()
     {
         this.tilemap = GetComponentInChildren<Tilemap>();
         this.cells = new Vector3Int[4];
     }
 
-    private void LateUpdate()
+    public void LateUpdate()
     {
         Clear();
         Copy();
@@ -25,7 +25,7 @@ public class Ghost : MonoBehaviour
         Set();
     }
 
-    private void Clear()
+    public void Clear()
     {
         for (int i = 0; i < this.cells.Length; i++)
         {
@@ -34,15 +34,19 @@ public class Ghost : MonoBehaviour
         }
     }
 
-    private void Copy()
+    public void Copy()
     {
         for (int i = 0; i < this.cells.Length; i++)
         {
-            this.cells[i] = this.trackingPiece.cells[i];
+            try
+            {
+                this.cells[i] = this.trackingPiece.cells[i];
+            }
+            catch { }
         }
     }
 
-    private void Drop()
+    public void Drop()
     {
         Vector3Int position = this.trackingPiece.position;
 
@@ -68,7 +72,7 @@ public class Ghost : MonoBehaviour
         this.board.Set(this.trackingPiece);
     }
 
-    private void Set()
+    public void Set()
     {
         for (int i = 0; i < this.cells.Length; i++)
         {
