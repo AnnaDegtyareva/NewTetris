@@ -10,7 +10,7 @@ public class Music : MonoBehaviour
     [SerializeField] GameObject MusicON;
     public AudioClip[] audioClips; // массив аудио эффектов
     public AudioMixerGroup[] audioGroup; // массив аудио групп
-    [SerializeField] AudioSource AS;
+    [SerializeField] public AudioSource AS;
 
     public void PlaySound(int soundNum, int soundGroup)
     {

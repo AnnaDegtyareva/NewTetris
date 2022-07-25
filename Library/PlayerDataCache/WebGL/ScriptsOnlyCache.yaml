@@ -114,8 +114,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5002}
     - Class: 114
       Script: {instanceID: 5702}
-    - Class: 114
-      Script: {instanceID: 18704}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -299,7 +297,7 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: 85471935085e219ebdd61c633e23c7e7
+      Hash: ad1ec4d40d3277d377a66378997df4c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ForCanvas
@@ -804,4 +802,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Zver/Desktop/NewTetris/GameWebGL
+  playerPath: C:/Users/Zver/Desktop/NewTetris/NewTetrisGameWebGL

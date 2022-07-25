@@ -11,7 +11,7 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] GameObject ShopCanvas;
     //Buttons for dress skins
     [SerializeField] List<GameObject> ButtonsForDressSkins;
-    
+
     //Buttons for buy skins
     [SerializeField] List<GameObject> ButtonsForBuySkins;
     //Ghost
@@ -39,8 +39,10 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] GameObject Pause;
     [SerializeField] GameObject Resume;
     [SerializeField] GameObject CanvasForPause;
+    //music
+    [SerializeField] Music Music;
 
-    public void BoardsSwitcher(int index, int price)
+    public void BoardsSwitcher(int index)
     {
         for (int i = 0; i < Boards.Count; i++)
         {
@@ -51,19 +53,19 @@ public class ForCanvas : MonoBehaviour
         Ghost.Clear();
         Ghost.board = boards[index];
         Ghost.trackingPiece = trackingPieces[index];
-        money += price;
-        PlayerPrefs.SetInt("Money", money);
     }
     public void BuySkins(int index, int price, int CountMoney)
     {
-        if (money>=price)
+        if (money >= price)
         {
-            BoardsSwitcher(index, -price);
+            BoardsSwitcher(index);
             ButtonsForBuySkins[index].SetActive(false);
             ButtonsForDressSkins[index].SetActive(true);
             countSkins++;
             countMoney = CountMoney;
+            money -= price;
             PlayerPrefs.SetInt(index + "shop", 1);
+            PlayerPrefs.SetInt("Money", money);
         }
 
     }
@@ -73,24 +75,25 @@ public class ForCanvas : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(i + "shop", 0) == 1)
             {
-                BoardsSwitcher(i, 0);
+                BoardsSwitcher(i);
                 ButtonsForBuySkins[i].SetActive(false);
                 ButtonsForDressSkins[i].SetActive(true);
+                countSkins++;
             }
         }
     }
 
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         //On start canvas and off others canvas
         StartCanvas.SetActive(true);
         SkinsCanvas.SetActive(false);
         ShopCanvas.SetActive(false);
         //on and off boards
-        BoardsSwitcher(0,0);
+        BoardsSwitcher(0);
         //money
         money = PlayerPrefs.GetInt("Money");
-        Debug.Log("Get" + money.ToString());
         MoneyText.text = money.ToString();
         //off and on buttons for dress skins
         for (int i = 0; i < ButtonsForDressSkins.Count; i++)
@@ -137,9 +140,8 @@ public class ForCanvas : MonoBehaviour
     {
         //On AD
         //Give random quantity money
-        int xx = money += Random.Range(10, 50);
-        Debug.Log("Set" + money.ToString());
-        PlayerPrefs.SetInt("Money", xx);
+        money += Random.Range(10, 50);
+        PlayerPrefs.SetInt("Money", money);
         Update();
     }
     public void Exit()
@@ -149,63 +151,63 @@ public class ForCanvas : MonoBehaviour
         ShopCanvas.SetActive(false);
         HelpCanvas.SetActive(false);
     }
-   
+
     //functions for dress skins
     public void dressClassic()
     {
         //dress skin
-        BoardsSwitcher(0,0);
+        BoardsSwitcher(0);
     }
     public void dressStars()
     {
         //dress skin
-        BoardsSwitcher(1, 0);
+        BoardsSwitcher(1);
     }
     public void dressFood()
     {
         //dress skin
-        BoardsSwitcher(2, 0);
+        BoardsSwitcher(2);
     }
     public void dressLego()
     {
         //dress skin
-        BoardsSwitcher(3, 0);
+        BoardsSwitcher(3);
     }
     public void dressFlowers()
     {
         //dress skin
-        BoardsSwitcher(4, 0);
+        BoardsSwitcher(4);
     }
     public void dressHearts()
     {
         //dress skin
-        BoardsSwitcher(5, 0);
+        BoardsSwitcher(5);
     }
     public void dressHelloKitty()
     {
         //dress skin
-        BoardsSwitcher(6, 0);
+        BoardsSwitcher(6);
     }
     public void dressCrystal()
     {
         //dress skin
-        BoardsSwitcher(7, 0);
+        BoardsSwitcher(7);
     }
     public void dressMeme()
     {
         //dress skin
-        BoardsSwitcher(8, 0);
+        BoardsSwitcher(8);
+    }    public void dressGradientHeart()
+    {
+        //dress skin
+        BoardsSwitcher(9);
     }
     public void dressGradient()
     {
         //dress skin
-        BoardsSwitcher(10, 0);
+        BoardsSwitcher(10);
     }
-    public void dressGradientHeart()
-    {
-        //dress skin
-        BoardsSwitcher(9, 0);
-    }
+    
 
     //functions for buy skins
     public void buyStars()
@@ -256,7 +258,7 @@ public class ForCanvas : MonoBehaviour
     public void buyGradientHearts()
     {
         //buy skin
-        BuySkins(9, 1234567890,  500);
+        BuySkins(9, 1234567890, 500);
     }
     public void Prize()
     {
@@ -293,8 +295,8 @@ public class ForCanvas : MonoBehaviour
         }
         else if (number > 7)
         {
-            int xx = money += Random.Range(10, 50);
-            PlayerPrefs.SetInt("Money", xx);
+            money += Random.Range(10, 50);
+            PlayerPrefs.SetInt("Money", money);
             Update();
         }
     }
@@ -305,6 +307,7 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 0f;
         Resume.SetActive(true);
         Pause.SetActive(false);
+        Music.AS.Stop();
     }
     public void resume()
     {
@@ -312,6 +315,7 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 1f;
         Resume.SetActive(false);
         Pause.SetActive(true);
+        Music.AS.Play();
     }
 
 }

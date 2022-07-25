@@ -107,7 +107,7 @@ public class Board : MonoBehaviour
                 }
             }
 
-            
+
         }
 
         return true;
@@ -118,7 +118,7 @@ public class Board : MonoBehaviour
         RectInt bounds = this.Bounds;
         int row = bounds.yMin;
 
-        while(row < bounds.yMax)
+        while (row < bounds.yMax)
         {
             if (IsLineFull(row))
             {
@@ -175,6 +175,6 @@ public class Board : MonoBehaviour
             row++;
         }
     }
-    
+
 
 }

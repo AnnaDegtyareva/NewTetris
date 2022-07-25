@@ -597,6 +597,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral35B44AA64754DEDC52915E7F763C081CF5B004D9
 IL2CPP_EXTERN_C String_t* _stringLiteral39AF3D436C99C728A2956F740562617A0F75553E;
 IL2CPP_EXTERN_C String_t* _stringLiteral3C4718DB1F64DE5DC92D2021D8F848FE1B73B315;
 IL2CPP_EXTERN_C String_t* _stringLiteral3DA3B3F9419DEFA543527EDEF953E71B0C03948A;
+IL2CPP_EXTERN_C String_t* _stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3;
 IL2CPP_EXTERN_C String_t* _stringLiteral4B3066F5BDDBAC0CA91E0FF86B90050BB8D8F469;
 IL2CPP_EXTERN_C String_t* _stringLiteral4BD3052BB1EC7598F0952B3FA0F49095189128A3;
 IL2CPP_EXTERN_C String_t* _stringLiteral4CB0E28CA7D15560E7E406DACD110A611209F6D3;
@@ -624,6 +625,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral896805975BA90C89D4A42C954185A07D6F31B5C6
 IL2CPP_EXTERN_C String_t* _stringLiteral92B0DDA6AFF45F8345D174CA89AA52AD69F87220;
 IL2CPP_EXTERN_C String_t* _stringLiteral934C8C507FB7392B3732B14368999D15F72B1945;
 IL2CPP_EXTERN_C String_t* _stringLiteral93F6FCB49E18D5B0ECC8968BDA5B20BD0E710915;
+IL2CPP_EXTERN_C String_t* _stringLiteral98EFCD2577BCD88B20D4486FCC65B58CFDBEEC05;
 IL2CPP_EXTERN_C String_t* _stringLiteral9DA946E64F235C4010516D45CFD9BDBF7BBF1A63;
 IL2CPP_EXTERN_C String_t* _stringLiteralA13079CEEFB104BE3620AED9A9492676E8ED6FBD;
 IL2CPP_EXTERN_C String_t* _stringLiteralA1A9551944FEEF3FB453B396BA6B4B6DFE9257B2;
@@ -5886,80 +5888,44 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___SkinsCanvas_5;
 	// UnityEngine.GameObject ForCanvas::ShopCanvas
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ShopCanvas_6;
-	// UnityEngine.GameObject ForCanvas::ClassicSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ClassicSkinButton_7;
-	// UnityEngine.GameObject ForCanvas::StarsSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___StarsSkinButton_8;
-	// UnityEngine.GameObject ForCanvas::FoodSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___FoodSkinButton_9;
-	// UnityEngine.GameObject ForCanvas::LegoSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___LegoSkinButton_10;
-	// UnityEngine.GameObject ForCanvas::FlowersSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___FlowersSkinButton_11;
-	// UnityEngine.GameObject ForCanvas::HeartsSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HeartsSkinButton_12;
-	// UnityEngine.GameObject ForCanvas::HelloKittySkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HelloKittySkinButton_13;
-	// UnityEngine.GameObject ForCanvas::CrystalsSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___CrystalsSkinButton_14;
-	// UnityEngine.GameObject ForCanvas::MemeSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___MemeSkinButton_15;
-	// UnityEngine.GameObject ForCanvas::GradientSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___GradientSkinButton_16;
-	// UnityEngine.GameObject ForCanvas::GradientHeartSkinButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___GradientHeartSkinButton_17;
-	// UnityEngine.GameObject ForCanvas::StarsBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___StarsBuyButton_18;
-	// UnityEngine.GameObject ForCanvas::FoodBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___FoodBuyButton_19;
-	// UnityEngine.GameObject ForCanvas::LegoBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___LegoBuyButton_20;
-	// UnityEngine.GameObject ForCanvas::FlowersBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___FlowersBuyButton_21;
-	// UnityEngine.GameObject ForCanvas::HeartsBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HeartsBuyButton_22;
-	// UnityEngine.GameObject ForCanvas::HelloKittyBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HelloKittyBuyButton_23;
-	// UnityEngine.GameObject ForCanvas::CrystalsBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___CrystalsBuyButton_24;
-	// UnityEngine.GameObject ForCanvas::MemeBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___MemeBuyButton_25;
-	// UnityEngine.GameObject ForCanvas::GradientBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___GradientBuyButton_26;
-	// UnityEngine.GameObject ForCanvas::GradientHeartBuyButton
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___GradientHeartBuyButton_27;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> ForCanvas::ButtonsForDressSkins
+	List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * ___ButtonsForDressSkins_7;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> ForCanvas::ButtonsForBuySkins
+	List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * ___ButtonsForBuySkins_8;
 	// Ghost ForCanvas::Ghost
-	Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * ___Ghost_28;
+	Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * ___Ghost_9;
 	// Board ForCanvas::Board
-	Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * ___Board_29;
+	Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * ___Board_10;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> ForCanvas::Boards
-	List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * ___Boards_30;
+	List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * ___Boards_11;
 	// System.Collections.Generic.List`1<Board> ForCanvas::boards
-	List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * ___boards_31;
+	List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * ___boards_12;
 	// System.Collections.Generic.List`1<Piece> ForCanvas::trackingPieces
-	List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * ___trackingPieces_32;
+	List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * ___trackingPieces_13;
 	// UnityEngine.UI.Text ForCanvas::MoneyText
-	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___MoneyText_33;
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___MoneyText_14;
 	// System.Int32 ForCanvas::money
-	int32_t ___money_34;
+	int32_t ___money_15;
 	// System.Int32 ForCanvas::countMoney
-	int32_t ___countMoney_35;
+	int32_t ___countMoney_16;
 	// UnityEngine.UI.Text ForCanvas::MoneyTextForShop
-	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___MoneyTextForShop_36;
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___MoneyTextForShop_17;
 	// UnityEngine.UI.Text ForCanvas::SkinsTextForSkins
-	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___SkinsTextForSkins_37;
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___SkinsTextForSkins_18;
 	// System.Int32 ForCanvas::countSkins
-	int32_t ___countSkins_38;
+	int32_t ___countSkins_19;
 	// UnityEngine.GameObject ForCanvas::HelpCanvas
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HelpCanvas_39;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___HelpCanvas_20;
 	// System.Int32 ForCanvas::number
-	int32_t ___number_40;
+	int32_t ___number_21;
 	// UnityEngine.GameObject ForCanvas::Pause
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___Pause_41;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___Pause_22;
 	// UnityEngine.GameObject ForCanvas::Resume
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___Resume_42;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___Resume_23;
 	// UnityEngine.GameObject ForCanvas::CanvasForPause
-	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___CanvasForPause_43;
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___CanvasForPause_24;
+	// Music ForCanvas::Music
+	Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * ___Music_25;
 
 public:
 	inline static int32_t get_offset_of_StartCanvas_4() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___StartCanvas_4)); }
@@ -5989,333 +5955,171 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___ShopCanvas_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_ClassicSkinButton_7() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___ClassicSkinButton_7)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_ClassicSkinButton_7() const { return ___ClassicSkinButton_7; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_ClassicSkinButton_7() { return &___ClassicSkinButton_7; }
-	inline void set_ClassicSkinButton_7(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_ButtonsForDressSkins_7() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___ButtonsForDressSkins_7)); }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * get_ButtonsForDressSkins_7() const { return ___ButtonsForDressSkins_7; }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 ** get_address_of_ButtonsForDressSkins_7() { return &___ButtonsForDressSkins_7; }
+	inline void set_ButtonsForDressSkins_7(List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * value)
 	{
-		___ClassicSkinButton_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___ClassicSkinButton_7), (void*)value);
+		___ButtonsForDressSkins_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ButtonsForDressSkins_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_StarsSkinButton_8() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___StarsSkinButton_8)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_StarsSkinButton_8() const { return ___StarsSkinButton_8; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_StarsSkinButton_8() { return &___StarsSkinButton_8; }
-	inline void set_StarsSkinButton_8(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_ButtonsForBuySkins_8() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___ButtonsForBuySkins_8)); }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * get_ButtonsForBuySkins_8() const { return ___ButtonsForBuySkins_8; }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 ** get_address_of_ButtonsForBuySkins_8() { return &___ButtonsForBuySkins_8; }
+	inline void set_ButtonsForBuySkins_8(List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * value)
 	{
-		___StarsSkinButton_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___StarsSkinButton_8), (void*)value);
+		___ButtonsForBuySkins_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___ButtonsForBuySkins_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_FoodSkinButton_9() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___FoodSkinButton_9)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_FoodSkinButton_9() const { return ___FoodSkinButton_9; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_FoodSkinButton_9() { return &___FoodSkinButton_9; }
-	inline void set_FoodSkinButton_9(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Ghost_9() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Ghost_9)); }
+	inline Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * get_Ghost_9() const { return ___Ghost_9; }
+	inline Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 ** get_address_of_Ghost_9() { return &___Ghost_9; }
+	inline void set_Ghost_9(Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * value)
 	{
-		___FoodSkinButton_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___FoodSkinButton_9), (void*)value);
+		___Ghost_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Ghost_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_LegoSkinButton_10() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___LegoSkinButton_10)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_LegoSkinButton_10() const { return ___LegoSkinButton_10; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_LegoSkinButton_10() { return &___LegoSkinButton_10; }
-	inline void set_LegoSkinButton_10(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Board_10() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Board_10)); }
+	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * get_Board_10() const { return ___Board_10; }
+	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 ** get_address_of_Board_10() { return &___Board_10; }
+	inline void set_Board_10(Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * value)
 	{
-		___LegoSkinButton_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___LegoSkinButton_10), (void*)value);
+		___Board_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Board_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_FlowersSkinButton_11() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___FlowersSkinButton_11)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_FlowersSkinButton_11() const { return ___FlowersSkinButton_11; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_FlowersSkinButton_11() { return &___FlowersSkinButton_11; }
-	inline void set_FlowersSkinButton_11(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Boards_11() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Boards_11)); }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * get_Boards_11() const { return ___Boards_11; }
+	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 ** get_address_of_Boards_11() { return &___Boards_11; }
+	inline void set_Boards_11(List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * value)
 	{
-		___FlowersSkinButton_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___FlowersSkinButton_11), (void*)value);
+		___Boards_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Boards_11), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_HeartsSkinButton_12() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HeartsSkinButton_12)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HeartsSkinButton_12() const { return ___HeartsSkinButton_12; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HeartsSkinButton_12() { return &___HeartsSkinButton_12; }
-	inline void set_HeartsSkinButton_12(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_boards_12() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___boards_12)); }
+	inline List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * get_boards_12() const { return ___boards_12; }
+	inline List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 ** get_address_of_boards_12() { return &___boards_12; }
+	inline void set_boards_12(List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * value)
 	{
-		___HeartsSkinButton_12 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HeartsSkinButton_12), (void*)value);
+		___boards_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___boards_12), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_HelloKittySkinButton_13() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HelloKittySkinButton_13)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HelloKittySkinButton_13() const { return ___HelloKittySkinButton_13; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HelloKittySkinButton_13() { return &___HelloKittySkinButton_13; }
-	inline void set_HelloKittySkinButton_13(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_trackingPieces_13() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___trackingPieces_13)); }
+	inline List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * get_trackingPieces_13() const { return ___trackingPieces_13; }
+	inline List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 ** get_address_of_trackingPieces_13() { return &___trackingPieces_13; }
+	inline void set_trackingPieces_13(List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * value)
 	{
-		___HelloKittySkinButton_13 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HelloKittySkinButton_13), (void*)value);
+		___trackingPieces_13 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___trackingPieces_13), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_CrystalsSkinButton_14() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___CrystalsSkinButton_14)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_CrystalsSkinButton_14() const { return ___CrystalsSkinButton_14; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_CrystalsSkinButton_14() { return &___CrystalsSkinButton_14; }
-	inline void set_CrystalsSkinButton_14(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_MoneyText_14() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MoneyText_14)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_MoneyText_14() const { return ___MoneyText_14; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_MoneyText_14() { return &___MoneyText_14; }
+	inline void set_MoneyText_14(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
 	{
-		___CrystalsSkinButton_14 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___CrystalsSkinButton_14), (void*)value);
+		___MoneyText_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MoneyText_14), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_MemeSkinButton_15() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MemeSkinButton_15)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_MemeSkinButton_15() const { return ___MemeSkinButton_15; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_MemeSkinButton_15() { return &___MemeSkinButton_15; }
-	inline void set_MemeSkinButton_15(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_money_15() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___money_15)); }
+	inline int32_t get_money_15() const { return ___money_15; }
+	inline int32_t* get_address_of_money_15() { return &___money_15; }
+	inline void set_money_15(int32_t value)
 	{
-		___MemeSkinButton_15 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MemeSkinButton_15), (void*)value);
+		___money_15 = value;
 	}
 
-	inline static int32_t get_offset_of_GradientSkinButton_16() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___GradientSkinButton_16)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_GradientSkinButton_16() const { return ___GradientSkinButton_16; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_GradientSkinButton_16() { return &___GradientSkinButton_16; }
-	inline void set_GradientSkinButton_16(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_countMoney_16() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___countMoney_16)); }
+	inline int32_t get_countMoney_16() const { return ___countMoney_16; }
+	inline int32_t* get_address_of_countMoney_16() { return &___countMoney_16; }
+	inline void set_countMoney_16(int32_t value)
 	{
-		___GradientSkinButton_16 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GradientSkinButton_16), (void*)value);
+		___countMoney_16 = value;
 	}
 
-	inline static int32_t get_offset_of_GradientHeartSkinButton_17() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___GradientHeartSkinButton_17)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_GradientHeartSkinButton_17() const { return ___GradientHeartSkinButton_17; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_GradientHeartSkinButton_17() { return &___GradientHeartSkinButton_17; }
-	inline void set_GradientHeartSkinButton_17(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_MoneyTextForShop_17() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MoneyTextForShop_17)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_MoneyTextForShop_17() const { return ___MoneyTextForShop_17; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_MoneyTextForShop_17() { return &___MoneyTextForShop_17; }
+	inline void set_MoneyTextForShop_17(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
 	{
-		___GradientHeartSkinButton_17 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GradientHeartSkinButton_17), (void*)value);
+		___MoneyTextForShop_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___MoneyTextForShop_17), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_StarsBuyButton_18() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___StarsBuyButton_18)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_StarsBuyButton_18() const { return ___StarsBuyButton_18; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_StarsBuyButton_18() { return &___StarsBuyButton_18; }
-	inline void set_StarsBuyButton_18(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_SkinsTextForSkins_18() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___SkinsTextForSkins_18)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_SkinsTextForSkins_18() const { return ___SkinsTextForSkins_18; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_SkinsTextForSkins_18() { return &___SkinsTextForSkins_18; }
+	inline void set_SkinsTextForSkins_18(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
 	{
-		___StarsBuyButton_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___StarsBuyButton_18), (void*)value);
+		___SkinsTextForSkins_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___SkinsTextForSkins_18), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_FoodBuyButton_19() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___FoodBuyButton_19)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_FoodBuyButton_19() const { return ___FoodBuyButton_19; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_FoodBuyButton_19() { return &___FoodBuyButton_19; }
-	inline void set_FoodBuyButton_19(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_countSkins_19() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___countSkins_19)); }
+	inline int32_t get_countSkins_19() const { return ___countSkins_19; }
+	inline int32_t* get_address_of_countSkins_19() { return &___countSkins_19; }
+	inline void set_countSkins_19(int32_t value)
 	{
-		___FoodBuyButton_19 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___FoodBuyButton_19), (void*)value);
+		___countSkins_19 = value;
 	}
 
-	inline static int32_t get_offset_of_LegoBuyButton_20() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___LegoBuyButton_20)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_LegoBuyButton_20() const { return ___LegoBuyButton_20; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_LegoBuyButton_20() { return &___LegoBuyButton_20; }
-	inline void set_LegoBuyButton_20(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_HelpCanvas_20() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HelpCanvas_20)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HelpCanvas_20() const { return ___HelpCanvas_20; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HelpCanvas_20() { return &___HelpCanvas_20; }
+	inline void set_HelpCanvas_20(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___LegoBuyButton_20 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___LegoBuyButton_20), (void*)value);
+		___HelpCanvas_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___HelpCanvas_20), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_FlowersBuyButton_21() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___FlowersBuyButton_21)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_FlowersBuyButton_21() const { return ___FlowersBuyButton_21; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_FlowersBuyButton_21() { return &___FlowersBuyButton_21; }
-	inline void set_FlowersBuyButton_21(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_number_21() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___number_21)); }
+	inline int32_t get_number_21() const { return ___number_21; }
+	inline int32_t* get_address_of_number_21() { return &___number_21; }
+	inline void set_number_21(int32_t value)
 	{
-		___FlowersBuyButton_21 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___FlowersBuyButton_21), (void*)value);
+		___number_21 = value;
 	}
 
-	inline static int32_t get_offset_of_HeartsBuyButton_22() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HeartsBuyButton_22)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HeartsBuyButton_22() const { return ___HeartsBuyButton_22; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HeartsBuyButton_22() { return &___HeartsBuyButton_22; }
-	inline void set_HeartsBuyButton_22(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Pause_22() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Pause_22)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_Pause_22() const { return ___Pause_22; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_Pause_22() { return &___Pause_22; }
+	inline void set_Pause_22(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___HeartsBuyButton_22 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HeartsBuyButton_22), (void*)value);
+		___Pause_22 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Pause_22), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_HelloKittyBuyButton_23() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HelloKittyBuyButton_23)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HelloKittyBuyButton_23() const { return ___HelloKittyBuyButton_23; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HelloKittyBuyButton_23() { return &___HelloKittyBuyButton_23; }
-	inline void set_HelloKittyBuyButton_23(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Resume_23() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Resume_23)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_Resume_23() const { return ___Resume_23; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_Resume_23() { return &___Resume_23; }
+	inline void set_Resume_23(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___HelloKittyBuyButton_23 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HelloKittyBuyButton_23), (void*)value);
+		___Resume_23 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Resume_23), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_CrystalsBuyButton_24() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___CrystalsBuyButton_24)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_CrystalsBuyButton_24() const { return ___CrystalsBuyButton_24; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_CrystalsBuyButton_24() { return &___CrystalsBuyButton_24; }
-	inline void set_CrystalsBuyButton_24(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_CanvasForPause_24() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___CanvasForPause_24)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_CanvasForPause_24() const { return ___CanvasForPause_24; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_CanvasForPause_24() { return &___CanvasForPause_24; }
+	inline void set_CanvasForPause_24(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___CrystalsBuyButton_24 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___CrystalsBuyButton_24), (void*)value);
+		___CanvasForPause_24 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___CanvasForPause_24), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_MemeBuyButton_25() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MemeBuyButton_25)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_MemeBuyButton_25() const { return ___MemeBuyButton_25; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_MemeBuyButton_25() { return &___MemeBuyButton_25; }
-	inline void set_MemeBuyButton_25(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	inline static int32_t get_offset_of_Music_25() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Music_25)); }
+	inline Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * get_Music_25() const { return ___Music_25; }
+	inline Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F ** get_address_of_Music_25() { return &___Music_25; }
+	inline void set_Music_25(Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * value)
 	{
-		___MemeBuyButton_25 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MemeBuyButton_25), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_GradientBuyButton_26() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___GradientBuyButton_26)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_GradientBuyButton_26() const { return ___GradientBuyButton_26; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_GradientBuyButton_26() { return &___GradientBuyButton_26; }
-	inline void set_GradientBuyButton_26(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___GradientBuyButton_26 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GradientBuyButton_26), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_GradientHeartBuyButton_27() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___GradientHeartBuyButton_27)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_GradientHeartBuyButton_27() const { return ___GradientHeartBuyButton_27; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_GradientHeartBuyButton_27() { return &___GradientHeartBuyButton_27; }
-	inline void set_GradientHeartBuyButton_27(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___GradientHeartBuyButton_27 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___GradientHeartBuyButton_27), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_Ghost_28() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Ghost_28)); }
-	inline Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * get_Ghost_28() const { return ___Ghost_28; }
-	inline Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 ** get_address_of_Ghost_28() { return &___Ghost_28; }
-	inline void set_Ghost_28(Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * value)
-	{
-		___Ghost_28 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Ghost_28), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_Board_29() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Board_29)); }
-	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * get_Board_29() const { return ___Board_29; }
-	inline Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 ** get_address_of_Board_29() { return &___Board_29; }
-	inline void set_Board_29(Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * value)
-	{
-		___Board_29 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Board_29), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_Boards_30() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Boards_30)); }
-	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * get_Boards_30() const { return ___Boards_30; }
-	inline List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 ** get_address_of_Boards_30() { return &___Boards_30; }
-	inline void set_Boards_30(List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * value)
-	{
-		___Boards_30 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Boards_30), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_boards_31() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___boards_31)); }
-	inline List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * get_boards_31() const { return ___boards_31; }
-	inline List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 ** get_address_of_boards_31() { return &___boards_31; }
-	inline void set_boards_31(List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * value)
-	{
-		___boards_31 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___boards_31), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_trackingPieces_32() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___trackingPieces_32)); }
-	inline List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * get_trackingPieces_32() const { return ___trackingPieces_32; }
-	inline List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 ** get_address_of_trackingPieces_32() { return &___trackingPieces_32; }
-	inline void set_trackingPieces_32(List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * value)
-	{
-		___trackingPieces_32 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___trackingPieces_32), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_MoneyText_33() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MoneyText_33)); }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_MoneyText_33() const { return ___MoneyText_33; }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_MoneyText_33() { return &___MoneyText_33; }
-	inline void set_MoneyText_33(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
-	{
-		___MoneyText_33 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MoneyText_33), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_money_34() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___money_34)); }
-	inline int32_t get_money_34() const { return ___money_34; }
-	inline int32_t* get_address_of_money_34() { return &___money_34; }
-	inline void set_money_34(int32_t value)
-	{
-		___money_34 = value;
-	}
-
-	inline static int32_t get_offset_of_countMoney_35() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___countMoney_35)); }
-	inline int32_t get_countMoney_35() const { return ___countMoney_35; }
-	inline int32_t* get_address_of_countMoney_35() { return &___countMoney_35; }
-	inline void set_countMoney_35(int32_t value)
-	{
-		___countMoney_35 = value;
-	}
-
-	inline static int32_t get_offset_of_MoneyTextForShop_36() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___MoneyTextForShop_36)); }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_MoneyTextForShop_36() const { return ___MoneyTextForShop_36; }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_MoneyTextForShop_36() { return &___MoneyTextForShop_36; }
-	inline void set_MoneyTextForShop_36(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
-	{
-		___MoneyTextForShop_36 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___MoneyTextForShop_36), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_SkinsTextForSkins_37() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___SkinsTextForSkins_37)); }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_SkinsTextForSkins_37() const { return ___SkinsTextForSkins_37; }
-	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_SkinsTextForSkins_37() { return &___SkinsTextForSkins_37; }
-	inline void set_SkinsTextForSkins_37(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
-	{
-		___SkinsTextForSkins_37 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___SkinsTextForSkins_37), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_countSkins_38() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___countSkins_38)); }
-	inline int32_t get_countSkins_38() const { return ___countSkins_38; }
-	inline int32_t* get_address_of_countSkins_38() { return &___countSkins_38; }
-	inline void set_countSkins_38(int32_t value)
-	{
-		___countSkins_38 = value;
-	}
-
-	inline static int32_t get_offset_of_HelpCanvas_39() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___HelpCanvas_39)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_HelpCanvas_39() const { return ___HelpCanvas_39; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_HelpCanvas_39() { return &___HelpCanvas_39; }
-	inline void set_HelpCanvas_39(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___HelpCanvas_39 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___HelpCanvas_39), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_number_40() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___number_40)); }
-	inline int32_t get_number_40() const { return ___number_40; }
-	inline int32_t* get_address_of_number_40() { return &___number_40; }
-	inline void set_number_40(int32_t value)
-	{
-		___number_40 = value;
-	}
-
-	inline static int32_t get_offset_of_Pause_41() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Pause_41)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_Pause_41() const { return ___Pause_41; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_Pause_41() { return &___Pause_41; }
-	inline void set_Pause_41(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___Pause_41 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Pause_41), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_Resume_42() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___Resume_42)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_Resume_42() const { return ___Resume_42; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_Resume_42() { return &___Resume_42; }
-	inline void set_Resume_42(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___Resume_42 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___Resume_42), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_CanvasForPause_43() { return static_cast<int32_t>(offsetof(ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587, ___CanvasForPause_43)); }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_CanvasForPause_43() const { return ___CanvasForPause_43; }
-	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_CanvasForPause_43() { return &___CanvasForPause_43; }
-	inline void set_CanvasForPause_43(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
-	{
-		___CanvasForPause_43 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___CanvasForPause_43), (void*)value);
+		___Music_25 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Music_25), (void*)value);
 	}
 };
 
@@ -10236,6 +10040,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RectInt_get_xMin_m38B75D4282FD49F0A38
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, int32_t ___x0, int32_t ___y1, int32_t ___z2, const RuntimeMethod* method);
 // System.Int32 UnityEngine.RectInt::get_xMax()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RectInt_get_xMax_mE0EB1ECCEE63D6DC10C160657CB59C63AB666DC0 (RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6 (String_t* ___key0, int32_t ___value1, const RuntimeMethod* method);
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411 (int32_t* __this, const RuntimeMethod* method);
 // UnityEngine.Tilemaps.TileBase UnityEngine.Tilemaps.Tilemap::GetTile(UnityEngine.Vector3Int)
@@ -10321,14 +10127,24 @@ inline Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * List_1_get_Item_m0BF95C
 {
 	return ((  Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * (*) (List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 *, int32_t, const RuntimeMethod*))List_1_get_Item_mF00B574E58FB078BB753B05A3B86DD0A7A266B63_gshared_inline)(__this, ___index0, method);
 }
-// System.Void ForCanvas::BoardsSwitcher(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, const RuntimeMethod* method);
+// System.Void ForCanvas::BoardsSwitcher(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, const RuntimeMethod* method);
+// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerPrefs_GetInt_mDA4476C10FCFF55FC65816E5E519B0EAFCB2AC14 (String_t* ___key0, int32_t ___defaultValue1, const RuntimeMethod* method);
+// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayerPrefs_GetInt_m6BCF9F844298D1810A68BAF23ECBA68C6960A986 (String_t* ___key0, const RuntimeMethod* method);
+// System.Void ForCanvas::PrintSaveSkins()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_PrintSaveSkins_m34787294D908558C353C7EDF331ED79FC7E41233 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method);
 // System.Void ForCanvas::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Update_mA06BFD63823C21296229879DCC90282B59F18F68 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method);
-// System.Void ForCanvas::BuySkins(System.Int32,System.Int32,UnityEngine.GameObject,UnityEngine.GameObject,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ButtonForBuySkin2, GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ButtonForDreesSkin3, int32_t ___CountMoney4, const RuntimeMethod* method);
+// System.Void ForCanvas::BuySkins(System.Int32,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, int32_t ___CountMoney2, const RuntimeMethod* method);
 // System.Void UnityEngine.Time::set_timeScale(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA (float ___value0, const RuntimeMethod* method);
+// System.Void UnityEngine.AudioSource::Stop()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Stop_mADA564D223832A64F8CF3EFBDEB534C0D658810F (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.AudioSource::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<UnityEngine.GameObject>::.ctor()
 inline void List_1__ctor_m859B0EE8491FDDEB1A3F7115D334B863E025BBC8 (List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * __this, const RuntimeMethod* method)
 {
@@ -10541,12 +10357,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YandexGame_NewLeaderboardScores_m6113739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_clip_mD1F50F7BA6EA3AF25B4922473352C5180CFF7B2B (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE * ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.AudioSource::set_outputAudioMixerGroup(UnityEngine.Audio.AudioMixerGroup)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_outputAudioMixerGroup_mE63B2B8C7E3F4E8C670E2474D1F22F9864DB71C8 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, AudioMixerGroup_tDF20E4C7597CA1C491BEA95A530E9CA19AE37F1F * ___value0, const RuntimeMethod* method);
-// System.Void UnityEngine.AudioSource::Play()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1 (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
 // System.Void Music::PlaySound(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Music_PlaySound_mE754603033007FEE4DD137D543CF74F11EF155F2 (Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * __this, int32_t ___soundNum0, int32_t ___soundGroup1, const RuntimeMethod* method);
-// System.Void UnityEngine.AudioSource::Stop()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Stop_mADA564D223832A64F8CF3EFBDEB534C0D658810F (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method);
 // System.String UnityEngine.UI.InputField::get_text()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* InputField_get_text_m15D0C784A4A104390610325B02216FC2A6F1077C_inline (InputField_tB41A2814F31A3E9373D443EDEBBB2856006324D0 * __this, const RuntimeMethod* method);
 // System.Int32 System.Int32::Parse(System.String)
@@ -11483,7 +11295,7 @@ IL_0023:
 
 IL_0027:
 	{
-		// while(row < bounds.yMax)
+		// while (row < bounds.yMax)
 		int32_t L_6 = V_1;
 		int32_t L_7;
 		L_7 = RectInt_get_yMax_m64A5AD9A6E57D367B5BF0364A7D4BD8EE5060059((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
@@ -11565,6 +11377,12 @@ IL_002f:
 // System.Void Board::LineClear(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Board_LineClear_m3ABE130C87D171F7906CA6290D799F6210D5796F (Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * __this, int32_t ___row0, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3);
+		s_Il2CppMethodInitialized = true;
+	}
 	RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	int32_t V_1 = 0;
@@ -11617,84 +11435,88 @@ IL_002c:
 		// ForCanvas.money += ForCanvas.countMoney;
 		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_9 = __this->get_ForCanvas_9();
 		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_10 = L_9;
-		int32_t L_11 = L_10->get_money_34();
+		int32_t L_11 = L_10->get_money_15();
 		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_12 = __this->get_ForCanvas_9();
-		int32_t L_13 = L_12->get_countMoney_35();
-		L_10->set_money_34(((int32_t)il2cpp_codegen_add((int32_t)L_11, (int32_t)L_13)));
-		// ForCanvas.MoneyText.text = ForCanvas.money.ToString();
+		int32_t L_13 = L_12->get_countMoney_16();
+		L_10->set_money_15(((int32_t)il2cpp_codegen_add((int32_t)L_11, (int32_t)L_13)));
+		// PlayerPrefs.SetInt("Money", ForCanvas.money);
 		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_14 = __this->get_ForCanvas_9();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_15 = L_14->get_MoneyText_33();
+		int32_t L_15 = L_14->get_money_15();
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3, L_15, /*hidden argument*/NULL);
+		// ForCanvas.MoneyText.text = ForCanvas.money.ToString();
 		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_16 = __this->get_ForCanvas_9();
-		int32_t* L_17 = L_16->get_address_of_money_34();
-		String_t* L_18;
-		L_18 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_17, /*hidden argument*/NULL);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_15, L_18);
-		goto IL_00c6;
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_17 = L_16->get_MoneyText_14();
+		ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * L_18 = __this->get_ForCanvas_9();
+		int32_t* L_19 = L_18->get_address_of_money_15();
+		String_t* L_20;
+		L_20 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_19, /*hidden argument*/NULL);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, L_20);
+		goto IL_00db;
 	}
 
-IL_0075:
+IL_008a:
 	{
 		// for (int col = bounds.xMin; col < bounds.xMax; col++)
-		int32_t L_19;
-		L_19 = RectInt_get_xMin_m38B75D4282FD49F0A38D1A26B4C46B9B5B8054BD((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
-		V_3 = L_19;
-		goto IL_00b7;
+		int32_t L_21;
+		L_21 = RectInt_get_xMin_m38B75D4282FD49F0A38D1A26B4C46B9B5B8054BD((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
+		V_3 = L_21;
+		goto IL_00cc;
 	}
 
-IL_007f:
+IL_0094:
 	{
 		// Vector3Int position = new Vector3Int(col, row + 1, 0);
-		int32_t L_20 = V_3;
-		int32_t L_21 = ___row0;
-		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&V_4), L_20, ((int32_t)il2cpp_codegen_add((int32_t)L_21, (int32_t)1)), 0, /*hidden argument*/NULL);
+		int32_t L_22 = V_3;
+		int32_t L_23 = ___row0;
+		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&V_4), L_22, ((int32_t)il2cpp_codegen_add((int32_t)L_23, (int32_t)1)), 0, /*hidden argument*/NULL);
 		// TileBase above = this.tilemap.GetTile(position);
-		Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31 * L_22;
-		L_22 = Board_get_tilemap_m02CC6BE52FAA4E280E8AA0F09F6CF87E828F6640_inline(__this, /*hidden argument*/NULL);
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_23 = V_4;
-		TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052 * L_24;
-		L_24 = Tilemap_GetTile_m611C89C47D6FE68099998192BA57344FCE782B19(L_22, L_23, /*hidden argument*/NULL);
-		V_5 = L_24;
+		Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31 * L_24;
+		L_24 = Board_get_tilemap_m02CC6BE52FAA4E280E8AA0F09F6CF87E828F6640_inline(__this, /*hidden argument*/NULL);
+		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_25 = V_4;
+		TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052 * L_26;
+		L_26 = Tilemap_GetTile_m611C89C47D6FE68099998192BA57344FCE782B19(L_24, L_25, /*hidden argument*/NULL);
+		V_5 = L_26;
 		// position = new Vector3Int(col, row, 0);
-		int32_t L_25 = V_3;
-		int32_t L_26 = ___row0;
-		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&V_4), L_25, L_26, 0, /*hidden argument*/NULL);
+		int32_t L_27 = V_3;
+		int32_t L_28 = ___row0;
+		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&V_4), L_27, L_28, 0, /*hidden argument*/NULL);
 		// this.tilemap.SetTile(position, above);
-		Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31 * L_27;
-		L_27 = Board_get_tilemap_m02CC6BE52FAA4E280E8AA0F09F6CF87E828F6640_inline(__this, /*hidden argument*/NULL);
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_28 = V_4;
-		TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052 * L_29 = V_5;
-		Tilemap_SetTile_mDA8C773A2FF8D6744BE268AE9D77CC3FB2A5D862(L_27, L_28, L_29, /*hidden argument*/NULL);
+		Tilemap_t0A1D80C1C0EDF8BDB0A2E274DC0826EF03642F31 * L_29;
+		L_29 = Board_get_tilemap_m02CC6BE52FAA4E280E8AA0F09F6CF87E828F6640_inline(__this, /*hidden argument*/NULL);
+		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_30 = V_4;
+		TileBase_t151317678DF54EED207F0AD6F4C590272B9AA052 * L_31 = V_5;
+		Tilemap_SetTile_mDA8C773A2FF8D6744BE268AE9D77CC3FB2A5D862(L_29, L_30, L_31, /*hidden argument*/NULL);
 		// for (int col = bounds.xMin; col < bounds.xMax; col++)
-		int32_t L_30 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_30, (int32_t)1));
+		int32_t L_32 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_32, (int32_t)1));
 	}
 
-IL_00b7:
+IL_00cc:
 	{
 		// for (int col = bounds.xMin; col < bounds.xMax; col++)
-		int32_t L_31 = V_3;
-		int32_t L_32;
-		L_32 = RectInt_get_xMax_mE0EB1ECCEE63D6DC10C160657CB59C63AB666DC0((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
-		if ((((int32_t)L_31) < ((int32_t)L_32)))
+		int32_t L_33 = V_3;
+		int32_t L_34;
+		L_34 = RectInt_get_xMax_mE0EB1ECCEE63D6DC10C160657CB59C63AB666DC0((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
+		if ((((int32_t)L_33) < ((int32_t)L_34)))
 		{
-			goto IL_007f;
+			goto IL_0094;
 		}
 	}
 	{
 		// row++;
-		int32_t L_33 = ___row0;
-		___row0 = ((int32_t)il2cpp_codegen_add((int32_t)L_33, (int32_t)1));
+		int32_t L_35 = ___row0;
+		___row0 = ((int32_t)il2cpp_codegen_add((int32_t)L_35, (int32_t)1));
 	}
 
-IL_00c6:
+IL_00db:
 	{
 		// while (row < bounds.yMax)
-		int32_t L_34 = ___row0;
-		int32_t L_35;
-		L_35 = RectInt_get_yMax_m64A5AD9A6E57D367B5BF0364A7D4BD8EE5060059((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
-		if ((((int32_t)L_34) < ((int32_t)L_35)))
+		int32_t L_36 = ___row0;
+		int32_t L_37;
+		L_37 = RectInt_get_yMax_m64A5AD9A6E57D367B5BF0364A7D4BD8EE5060059((RectInt_tE7B8105A280C1AC73A4157ED41F9B86C9BD91E49 *)(&V_0), /*hidden argument*/NULL);
+		if ((((int32_t)L_36) < ((int32_t)L_37)))
 		{
-			goto IL_0075;
+			goto IL_008a;
 		}
 	}
 	{
@@ -12653,8 +12475,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EmbeddedAttribute__ctor_m90D0B6DEB625101
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void ForCanvas::BoardsSwitcher(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, const RuntimeMethod* method)
+// System.Void ForCanvas::BoardsSwitcher(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12675,7 +12497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BoardsSwitcher_mA886D76EC06DE7
 IL_0004:
 	{
 		// Boards[i].SetActive(false);
-		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_0 = __this->get_Boards_30();
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_0 = __this->get_Boards_11();
 		int32_t L_1 = V_0;
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2;
 		L_2 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_0, L_1, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
@@ -12689,7 +12511,7 @@ IL_001a:
 	{
 		// for (int i = 0; i < Boards.Count; i++)
 		int32_t L_4 = V_0;
-		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_5 = __this->get_Boards_30();
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_5 = __this->get_Boards_11();
 		int32_t L_6;
 		L_6 = List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_inline(L_5, /*hidden argument*/List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
 		if ((((int32_t)L_4) < ((int32_t)L_6)))
@@ -12699,68 +12521,167 @@ IL_001a:
 	}
 	{
 		// Boards[index].SetActive(true);//on board
-		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_7 = __this->get_Boards_30();
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_7 = __this->get_Boards_11();
 		int32_t L_8 = ___index0;
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9;
 		L_9 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_7, L_8, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_9, (bool)1, /*hidden argument*/NULL);
-		// money += price;
-		int32_t L_10 = __this->get_money_34();
-		int32_t L_11 = ___price1;
-		__this->set_money_34(((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)L_11)));
 		// Ghost.Clear();
-		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_12 = __this->get_Ghost_28();
-		Ghost_Clear_m0A4E9B0A4A908409800D26DAB5AE409E037FCD33(L_12, /*hidden argument*/NULL);
+		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_10 = __this->get_Ghost_9();
+		Ghost_Clear_m0A4E9B0A4A908409800D26DAB5AE409E037FCD33(L_10, /*hidden argument*/NULL);
 		// Ghost.board = boards[index];
-		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_13 = __this->get_Ghost_28();
-		List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * L_14 = __this->get_boards_31();
-		int32_t L_15 = ___index0;
-		Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * L_16;
-		L_16 = List_1_get_Item_m7F5747387CA6AB6C92765A5D118D5614DF448A71_inline(L_14, L_15, /*hidden argument*/List_1_get_Item_m7F5747387CA6AB6C92765A5D118D5614DF448A71_RuntimeMethod_var);
-		L_13->set_board_5(L_16);
+		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_11 = __this->get_Ghost_9();
+		List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * L_12 = __this->get_boards_12();
+		int32_t L_13 = ___index0;
+		Board_tCD3BC0CE0D6279E0759C85C6EA5A47A368497BB1 * L_14;
+		L_14 = List_1_get_Item_m7F5747387CA6AB6C92765A5D118D5614DF448A71_inline(L_12, L_13, /*hidden argument*/List_1_get_Item_m7F5747387CA6AB6C92765A5D118D5614DF448A71_RuntimeMethod_var);
+		L_11->set_board_5(L_14);
 		// Ghost.trackingPiece = trackingPieces[index];
-		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_17 = __this->get_Ghost_28();
-		List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * L_18 = __this->get_trackingPieces_32();
-		int32_t L_19 = ___index0;
-		Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * L_20;
-		L_20 = List_1_get_Item_m0BF95C9107ADF05CC71F4CF3E24F591A683ED3C2_inline(L_18, L_19, /*hidden argument*/List_1_get_Item_m0BF95C9107ADF05CC71F4CF3E24F591A683ED3C2_RuntimeMethod_var);
-		L_17->set_trackingPiece_6(L_20);
+		Ghost_tCE1B108E8E96ABC4062937AF39FD7E4D7B05A9C7 * L_15 = __this->get_Ghost_9();
+		List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * L_16 = __this->get_trackingPieces_13();
+		int32_t L_17 = ___index0;
+		Piece_tBB694F50405042E44F45E94D75887A6B91292BF1 * L_18;
+		L_18 = List_1_get_Item_m0BF95C9107ADF05CC71F4CF3E24F591A683ED3C2_inline(L_16, L_17, /*hidden argument*/List_1_get_Item_m0BF95C9107ADF05CC71F4CF3E24F591A683ED3C2_RuntimeMethod_var);
+		L_15->set_trackingPiece_6(L_18);
 		// }
 		return;
 	}
 }
-// System.Void ForCanvas::BuySkins(System.Int32,System.Int32,UnityEngine.GameObject,UnityEngine.GameObject,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ButtonForBuySkin2, GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___ButtonForDreesSkin3, int32_t ___CountMoney4, const RuntimeMethod* method)
+// System.Void ForCanvas::BuySkins(System.Int32,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, int32_t ___index0, int32_t ___price1, int32_t ___CountMoney2, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// if (money>=price)
-		int32_t L_0 = __this->get_money_34();
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98EFCD2577BCD88B20D4486FCC65B58CFDBEEC05);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (money >= price)
+		int32_t L_0 = __this->get_money_15();
 		int32_t L_1 = ___price1;
 		if ((((int32_t)L_0) < ((int32_t)L_1)))
 		{
-			goto IL_0037;
+			goto IL_007e;
 		}
 	}
 	{
-		// BoardsSwitcher(index, -price);
+		// BoardsSwitcher(index);
 		int32_t L_2 = ___index0;
-		int32_t L_3 = ___price1;
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, L_2, ((-L_3)), /*hidden argument*/NULL);
-		// ButtonForBuySkin.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = ___ButtonForBuySkin2;
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)0, /*hidden argument*/NULL);
-		// ButtonForDreesSkin.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = ___ButtonForDreesSkin3;
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_5, (bool)1, /*hidden argument*/NULL);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, L_2, /*hidden argument*/NULL);
+		// ButtonsForBuySkins[index].SetActive(false);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_3 = __this->get_ButtonsForBuySkins_8();
+		int32_t L_4 = ___index0;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5;
+		L_5 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_3, L_4, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_5, (bool)0, /*hidden argument*/NULL);
+		// ButtonsForDressSkins[index].SetActive(true);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_6 = __this->get_ButtonsForDressSkins_7();
+		int32_t L_7 = ___index0;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_8;
+		L_8 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_6, L_7, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_8, (bool)1, /*hidden argument*/NULL);
 		// countSkins++;
-		int32_t L_6 = __this->get_countSkins_38();
-		__this->set_countSkins_38(((int32_t)il2cpp_codegen_add((int32_t)L_6, (int32_t)1)));
+		int32_t L_9 = __this->get_countSkins_19();
+		__this->set_countSkins_19(((int32_t)il2cpp_codegen_add((int32_t)L_9, (int32_t)1)));
 		// countMoney = CountMoney;
-		int32_t L_7 = ___CountMoney4;
-		__this->set_countMoney_35(L_7);
+		int32_t L_10 = ___CountMoney2;
+		__this->set_countMoney_16(L_10);
+		// money -= price;
+		int32_t L_11 = __this->get_money_15();
+		int32_t L_12 = ___price1;
+		__this->set_money_15(((int32_t)il2cpp_codegen_subtract((int32_t)L_11, (int32_t)L_12)));
+		// PlayerPrefs.SetInt(index + "shop", 1);
+		String_t* L_13;
+		L_13 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&___index0), /*hidden argument*/NULL);
+		String_t* L_14;
+		L_14 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(L_13, _stringLiteral98EFCD2577BCD88B20D4486FCC65B58CFDBEEC05, /*hidden argument*/NULL);
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(L_14, 1, /*hidden argument*/NULL);
+		// PlayerPrefs.SetInt("Money", money);
+		int32_t L_15 = __this->get_money_15();
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3, L_15, /*hidden argument*/NULL);
 	}
 
-IL_0037:
+IL_007e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void ForCanvas::PrintSaveSkins()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_PrintSaveSkins_m34787294D908558C353C7EDF331ED79FC7E41233 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98EFCD2577BCD88B20D4486FCC65B58CFDBEEC05);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// for (int i = 0; i < Boards.Count; i++)
+		V_0 = 0;
+		goto IL_005b;
+	}
+
+IL_0004:
+	{
+		// if (PlayerPrefs.GetInt(i + "shop", 0) == 1)
+		String_t* L_0;
+		L_0 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_1;
+		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(L_0, _stringLiteral98EFCD2577BCD88B20D4486FCC65B58CFDBEEC05, /*hidden argument*/NULL);
+		int32_t L_2;
+		L_2 = PlayerPrefs_GetInt_mDA4476C10FCFF55FC65816E5E519B0EAFCB2AC14(L_1, 0, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_2) == ((uint32_t)1))))
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		// BoardsSwitcher(i);
+		int32_t L_3 = V_0;
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, L_3, /*hidden argument*/NULL);
+		// ButtonsForBuySkins[i].SetActive(false);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_4 = __this->get_ButtonsForBuySkins_8();
+		int32_t L_5 = V_0;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6;
+		L_6 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_4, L_5, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_6, (bool)0, /*hidden argument*/NULL);
+		// ButtonsForDressSkins[i].SetActive(true);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_7 = __this->get_ButtonsForDressSkins_7();
+		int32_t L_8 = V_0;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9;
+		L_9 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_7, L_8, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_9, (bool)1, /*hidden argument*/NULL);
+		// countSkins++;
+		int32_t L_10 = __this->get_countSkins_19();
+		__this->set_countSkins_19(((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)1)));
+	}
+
+IL_0057:
+	{
+		// for (int i = 0; i < Boards.Count; i++)
+		int32_t L_11 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_11, (int32_t)1));
+	}
+
+IL_005b:
+	{
+		// for (int i = 0; i < Boards.Count; i++)
+		int32_t L_12 = V_0;
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_13 = __this->get_Boards_11();
+		int32_t L_14;
+		L_14 = List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_inline(L_13, /*hidden argument*/List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
+		if ((((int32_t)L_12) < ((int32_t)L_14)))
+		{
+			goto IL_0004;
+		}
+	}
 	{
 		// }
 		return;
@@ -12769,6 +12690,16 @@ IL_0037:
 // System.Void ForCanvas::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Start_mC978C177F6C812A1B13B45CB4757131210B14FB7 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
 	{
 		// StartCanvas.SetActive(true);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_StartCanvas_4();
@@ -12779,91 +12710,96 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Start_mC978C177F6C812A1B13B45C
 		// ShopCanvas.SetActive(false);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_ShopCanvas_6();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
-		// BoardsSwitcher(0,0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 0, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(0);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 0, /*hidden argument*/NULL);
+		// money = PlayerPrefs.GetInt("Money");
+		int32_t L_3;
+		L_3 = PlayerPrefs_GetInt_m6BCF9F844298D1810A68BAF23ECBA68C6960A986(_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3, /*hidden argument*/NULL);
+		__this->set_money_15(L_3);
 		// MoneyText.text = money.ToString();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_3 = __this->get_MoneyText_33();
-		int32_t* L_4 = __this->get_address_of_money_34();
-		String_t* L_5;
-		L_5 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_4, /*hidden argument*/NULL);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
-		// ClassicSkinButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_ClassicSkinButton_7();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_6, (bool)1, /*hidden argument*/NULL);
-		// StarsSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_7 = __this->get_StarsSkinButton_8();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_7, (bool)0, /*hidden argument*/NULL);
-		// FoodSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_8 = __this->get_FoodSkinButton_9();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_8, (bool)0, /*hidden argument*/NULL);
-		// LegoSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9 = __this->get_LegoSkinButton_10();
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_4 = __this->get_MoneyText_14();
+		int32_t* L_5 = __this->get_address_of_money_15();
+		String_t* L_6;
+		L_6 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_5, /*hidden argument*/NULL);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_6);
+		// for (int i = 0; i < ButtonsForDressSkins.Count; i++)
+		V_0 = 0;
+		goto IL_006b;
+	}
+
+IL_0055:
+	{
+		// ButtonsForDressSkins[i].SetActive(false);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_7 = __this->get_ButtonsForDressSkins_7();
+		int32_t L_8 = V_0;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9;
+		L_9 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_7, L_8, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_9, (bool)0, /*hidden argument*/NULL);
-		// FlowersSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = __this->get_FlowersSkinButton_11();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_10, (bool)0, /*hidden argument*/NULL);
-		// HeartsSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = __this->get_HeartsSkinButton_12();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)0, /*hidden argument*/NULL);
-		// HelloKittySkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = __this->get_HelloKittySkinButton_13();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)0, /*hidden argument*/NULL);
-		// CrystalsSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_13 = __this->get_CrystalsSkinButton_14();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_13, (bool)0, /*hidden argument*/NULL);
-		// MemeSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14 = __this->get_MemeSkinButton_15();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_14, (bool)0, /*hidden argument*/NULL);
-		// GradientSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_GradientSkinButton_16();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_15, (bool)0, /*hidden argument*/NULL);
-		// GradientHeartSkinButton.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_16 = __this->get_GradientHeartSkinButton_17();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_16, (bool)0, /*hidden argument*/NULL);
-		// StarsBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_17 = __this->get_StarsBuyButton_18();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_17, (bool)1, /*hidden argument*/NULL);
-		// FoodBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_18 = __this->get_FoodBuyButton_19();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_18, (bool)1, /*hidden argument*/NULL);
-		// LegoBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_19 = __this->get_LegoBuyButton_20();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_19, (bool)1, /*hidden argument*/NULL);
-		// FlowersBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_20 = __this->get_FlowersBuyButton_21();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_20, (bool)1, /*hidden argument*/NULL);
-		// HeartsBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_HeartsBuyButton_22();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_21, (bool)1, /*hidden argument*/NULL);
-		// HelloKittyBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22 = __this->get_HelloKittyBuyButton_23();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_22, (bool)1, /*hidden argument*/NULL);
-		// CrystalsBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23 = __this->get_CrystalsBuyButton_24();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_23, (bool)1, /*hidden argument*/NULL);
-		// MemeBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_24 = __this->get_MemeBuyButton_25();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_24, (bool)1, /*hidden argument*/NULL);
-		// GradientBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_25 = __this->get_GradientBuyButton_26();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_25, (bool)1, /*hidden argument*/NULL);
-		// GradientHeartBuyButton.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_26 = __this->get_GradientHeartBuyButton_27();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_26, (bool)1, /*hidden argument*/NULL);
+		// for (int i = 0; i < ButtonsForDressSkins.Count; i++)
+		int32_t L_10 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)1));
+	}
+
+IL_006b:
+	{
+		// for (int i = 0; i < ButtonsForDressSkins.Count; i++)
+		int32_t L_11 = V_0;
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_12 = __this->get_ButtonsForDressSkins_7();
+		int32_t L_13;
+		L_13 = List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_inline(L_12, /*hidden argument*/List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
+		if ((((int32_t)L_11) < ((int32_t)L_13)))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		// for (int i = 0; i < ButtonsForBuySkins.Count; i++)
+		V_1 = 0;
+		goto IL_0093;
+	}
+
+IL_007d:
+	{
+		// ButtonsForBuySkins[i].SetActive(true);
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_14 = __this->get_ButtonsForBuySkins_8();
+		int32_t L_15 = V_1;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_16;
+		L_16 = List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_inline(L_14, L_15, /*hidden argument*/List_1_get_Item_m1E85E7CDA3459102B9FD665388559843378C2B4C_RuntimeMethod_var);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_16, (bool)1, /*hidden argument*/NULL);
+		// for (int i = 0; i < ButtonsForBuySkins.Count; i++)
+		int32_t L_17 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_17, (int32_t)1));
+	}
+
+IL_0093:
+	{
+		// for (int i = 0; i < ButtonsForBuySkins.Count; i++)
+		int32_t L_18 = V_1;
+		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_19 = __this->get_ButtonsForBuySkins_8();
+		int32_t L_20;
+		L_20 = List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_inline(L_19, /*hidden argument*/List_1_get_Count_m6206A8F48C7A98B9CFC23A13548CB215717573BD_RuntimeMethod_var);
+		if ((((int32_t)L_18) < ((int32_t)L_20)))
+		{
+			goto IL_007d;
+		}
+	}
+	{
 		// countSkins = 1;
-		__this->set_countSkins_38(1);
+		__this->set_countSkins_19(1);
 		// HelpCanvas.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_27 = __this->get_HelpCanvas_39();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_27, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_HelpCanvas_20();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_21, (bool)0, /*hidden argument*/NULL);
 		// Resume.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_28 = __this->get_Resume_42();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_28, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22 = __this->get_Resume_23();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_22, (bool)0, /*hidden argument*/NULL);
 		// Pause.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_29 = __this->get_Pause_41();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_29, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23 = __this->get_Pause_22();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_23, (bool)1, /*hidden argument*/NULL);
 		// CanvasForPause.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_30 = __this->get_CanvasForPause_43();
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_30, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_24 = __this->get_CanvasForPause_24();
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_24, (bool)0, /*hidden argument*/NULL);
+		// PrintSaveSkins();
+		ForCanvas_PrintSaveSkins_m34787294D908558C353C7EDF331ED79FC7E41233(__this, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12873,20 +12809,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Update_mA06BFD63823C2129622987
 {
 	{
 		// MoneyText.text = money.ToString();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_0 = __this->get_MoneyText_33();
-		int32_t* L_1 = __this->get_address_of_money_34();
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_0 = __this->get_MoneyText_14();
+		int32_t* L_1 = __this->get_address_of_money_15();
 		String_t* L_2;
 		L_2 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_1, /*hidden argument*/NULL);
 		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_2);
 		// MoneyTextForShop.text = money.ToString();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_3 = __this->get_MoneyTextForShop_36();
-		int32_t* L_4 = __this->get_address_of_money_34();
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_3 = __this->get_MoneyTextForShop_17();
+		int32_t* L_4 = __this->get_address_of_money_15();
 		String_t* L_5;
 		L_5 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_4, /*hidden argument*/NULL);
 		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_5);
 		// SkinsTextForSkins.text = countSkins.ToString();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_6 = __this->get_SkinsTextForSkins_37();
-		int32_t* L_7 = __this->get_address_of_countSkins_38();
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_6 = __this->get_SkinsTextForSkins_18();
+		int32_t* L_7 = __this->get_address_of_countSkins_19();
 		String_t* L_8;
 		L_8 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)L_7, /*hidden argument*/NULL);
 		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_6, L_8);
@@ -12899,7 +12835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Help_mEA295A52A605D178E4B66C09
 {
 	{
 		// HelpCanvas.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_HelpCanvas_39();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_HelpCanvas_20();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
@@ -12930,12 +12866,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Shop_mE9506FF20A1D769425773832
 // System.Void ForCanvas::FreeMoney()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_FreeMoney_mA21CD3B2B126DD0066B83492420BCDCEF7CEB3C4 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		// money += Random.Range(10, 50);
-		int32_t L_0 = __this->get_money_34();
+		int32_t L_0 = __this->get_money_15();
 		int32_t L_1;
 		L_1 = Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A(((int32_t)10), ((int32_t)50), /*hidden argument*/NULL);
-		__this->set_money_34(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)L_1)));
+		__this->set_money_15(((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)L_1)));
+		// PlayerPrefs.SetInt("Money", money);
+		int32_t L_2 = __this->get_money_15();
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3, L_2, /*hidden argument*/NULL);
 		// Update();
 		ForCanvas_Update_mA06BFD63823C21296229879DCC90282B59F18F68(__this, /*hidden argument*/NULL);
 		// }
@@ -12956,7 +12901,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Exit_m0BC7C22800BA42249A1435D1
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_ShopCanvas_6();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
 		// HelpCanvas.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_HelpCanvas_39();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_HelpCanvas_20();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_3, (bool)0, /*hidden argument*/NULL);
 		// }
 		return;
@@ -12966,8 +12911,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Exit_m0BC7C22800BA42249A1435D1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressClassic_m449CAB0964C364DD20AD5F043D2E1D285BFCC8AF (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(0,0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 0, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(0);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 0, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12976,8 +12921,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressClassic_m449CAB0964C364DD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressStars_mDEC42D331BC8B2EB87BD965C72BCC6C253BAF8D4 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(1, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 1, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(1);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12986,8 +12931,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressStars_mDEC42D331BC8B2EB87
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressFood_mEE9D45D3331CD5EC3CC35BE0397D87792B52C872 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(2, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 2, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(2);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 2, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -12996,8 +12941,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressFood_mEE9D45D3331CD5EC3CC
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressLego_m8FC7D53D7300DD3E3B735CD4519E326AB6C2A025 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(3, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 3, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(3);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13006,8 +12951,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressLego_m8FC7D53D7300DD3E3B7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressFlowers_m968F3063B29052632F265E4443638A3861F1CEF0 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(4, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 4, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(4);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 4, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13016,8 +12961,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressFlowers_m968F3063B2905263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressHearts_m043D5CA1B570BE0B26BD08DD74B41DA2FB9DC344 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(5, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 5, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(5);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 5, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13026,8 +12971,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressHearts_m043D5CA1B570BE0B2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressHelloKitty_m3E21F9EF1A3B5FDD5B068139B7F93FBDABC471E3 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(6, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 6, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(6);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 6, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13036,8 +12981,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressHelloKitty_m3E21F9EF1A3B5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressCrystal_m0BE95C0963863C9F4E7041C5D02FEDBBEB3F835B (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(7, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 7, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(7);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 7, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13046,8 +12991,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressCrystal_m0BE95C0963863C9F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressMeme_m53E9D6C9C107A03D79F4ECE751A5F53EBE594734 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(8, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, 8, 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(8);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, 8, /*hidden argument*/NULL);
+		// }    public void dressGradientHeart()
+		return;
+	}
+}
+// System.Void ForCanvas::dressGradientHeart()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressGradientHeart_m0DBF61A5E59081ACAEE48382F7DF7775BA99D1D7 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
+{
+	{
+		// BoardsSwitcher(9);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, ((int32_t)9), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13056,18 +13011,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressMeme_m53E9D6C9C107A03D79F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressGradient_mE89937F4C05D62FB195D1242FA8DDAD67B9F06DB (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BoardsSwitcher(10, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, ((int32_t)10), 0, /*hidden argument*/NULL);
-		// }
-		return;
-	}
-}
-// System.Void ForCanvas::dressGradientHeart()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressGradientHeart_m0DBF61A5E59081ACAEE48382F7DF7775BA99D1D7 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
-{
-	{
-		// BoardsSwitcher(9, 0);
-		ForCanvas_BoardsSwitcher_mA886D76EC06DE749A33C9EDDF933573A755FA60B(__this, ((int32_t)9), 0, /*hidden argument*/NULL);
+		// BoardsSwitcher(10);
+		ForCanvas_BoardsSwitcher_m4D7F8EF3986EDA75FF677CACD27D2F064BD4854D(__this, ((int32_t)10), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13076,10 +13021,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_dressGradientHeart_m0DBF61A5E5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyStars_m092DCB3F98121B58D9E693BDCA8D57658E24EAB5 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(1, 42, StarsBuyButton, StarsSkinButton, 10);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_StarsBuyButton_18();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_StarsSkinButton_8();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 1, ((int32_t)42), L_0, L_1, ((int32_t)10), /*hidden argument*/NULL);
+		// BuySkins(1, 42, 10);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 1, ((int32_t)42), ((int32_t)10), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13088,10 +13031,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyStars_m092DCB3F98121B58D9E6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyFood_m4688AB427F3B8A12B91A015E29DF51454D7E82E4 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(2, 271, FoodBuyButton, FoodSkinButton, 100);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_FoodBuyButton_19();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_FoodSkinButton_9();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 2, ((int32_t)271), L_0, L_1, ((int32_t)100), /*hidden argument*/NULL);
+		// BuySkins(2, 271, 100);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 2, ((int32_t)271), ((int32_t)100), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13100,10 +13041,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyFood_m4688AB427F3B8A12B91A0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyLego_m9BF4A4F9580C123150F5B1D9CA78B3728B7DE49B (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(3, 1618, LegoBuyButton, LegoSkinButton, 150);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_LegoBuyButton_20();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_LegoSkinButton_10();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 3, ((int32_t)1618), L_0, L_1, ((int32_t)150), /*hidden argument*/NULL);
+		// BuySkins(3, 1618, 150);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 3, ((int32_t)1618), ((int32_t)150), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13112,10 +13051,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyLego_m9BF4A4F9580C123150F5B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyFlowers_m050491B39FC9E248F59F9FC5DE632CE8995A2DAB (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(4, 2500, FlowersBuyButton, FlowersSkinButton, 200);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_FlowersBuyButton_21();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_FlowersSkinButton_11();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 4, ((int32_t)2500), L_0, L_1, ((int32_t)200), /*hidden argument*/NULL);
+		// BuySkins(4, 2500, 200);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 4, ((int32_t)2500), ((int32_t)200), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13124,10 +13061,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyFlowers_m050491B39FC9E248F5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyHearts_m1AD6E7819CF63A9849D3499E5C20B7B74B7AEB46 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(5, 10000, HeartsBuyButton, HeartsSkinButton, 250);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_HeartsBuyButton_22();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_HeartsSkinButton_12();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 5, ((int32_t)10000), L_0, L_1, ((int32_t)250), /*hidden argument*/NULL);
+		// BuySkins(5, 10000, 250);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 5, ((int32_t)10000), ((int32_t)250), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13136,10 +13071,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyHearts_m1AD6E7819CF63A9849D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyHelloKitty_mFD9B4D1CCA1F28F8B7BB3F68AC7517AC0C79E1CA (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(6, 15555, HelloKittyBuyButton, HelloKittySkinButton, 300);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_HelloKittyBuyButton_23();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_HelloKittySkinButton_13();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 6, ((int32_t)15555), L_0, L_1, ((int32_t)300), /*hidden argument*/NULL);
+		// BuySkins(6, 15555, 300);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 6, ((int32_t)15555), ((int32_t)300), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13148,10 +13081,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyHelloKitty_mFD9B4D1CCA1F28F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyCrystal_mA28793796B1FB518F0E075C7BCA25376B2C73274 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(7, 31415, CrystalsBuyButton, CrystalsSkinButton, 350);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_CrystalsBuyButton_24();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_CrystalsSkinButton_14();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 7, ((int32_t)31415), L_0, L_1, ((int32_t)350), /*hidden argument*/NULL);
+		// BuySkins(7, 31415, 350);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 7, ((int32_t)31415), ((int32_t)350), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13160,10 +13091,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyCrystal_mA28793796B1FB518F0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyMeme_mAB6201F043CFFB45D565A2B3F4A7CCCC29250202 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(8, 7777777, MemeBuyButton, MemeSkinButton, 400);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_MemeBuyButton_25();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_MemeSkinButton_15();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 8, ((int32_t)7777777), L_0, L_1, ((int32_t)400), /*hidden argument*/NULL);
+		// BuySkins(8, 7777777, 400);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 8, ((int32_t)7777777), ((int32_t)400), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13172,10 +13101,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyMeme_mAB6201F043CFFB45D565A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyGradient_mD730E0193EB3D728A92436DAACE9B460C92B01A0 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(10, 88888888, GradientBuyButton, GradientSkinButton, 450);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_GradientBuyButton_26();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_GradientSkinButton_16();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, ((int32_t)10), ((int32_t)88888888), L_0, L_1, ((int32_t)450), /*hidden argument*/NULL);
+		// BuySkins(10, 88888888, 450);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, ((int32_t)10), ((int32_t)88888888), ((int32_t)450), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13184,10 +13111,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyGradient_mD730E0193EB3D728A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyGradientHearts_mB64A610AE93F0B426211106684D41DA48E70A434 (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
 	{
-		// BuySkins(9, 1234567890, GradientHeartBuyButton, GradientHeartSkinButton, 500);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_GradientHeartBuyButton_27();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_GradientHeartSkinButton_17();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, ((int32_t)9), ((int32_t)1234567890), L_0, L_1, ((int32_t)500), /*hidden argument*/NULL);
+		// BuySkins(9, 1234567890, 500);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, ((int32_t)9), ((int32_t)1234567890), ((int32_t)500), /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13195,143 +13120,138 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_buyGradientHearts_mB64A610AE93
 // System.Void ForCanvas::Prize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_Prize_mA3D10D933FAEE807D699E30D9F3ED47BEE783DDB (ForCanvas_tB23082B1D74C5CEFAE7BF6CC13F8D5F74EF32587 * __this, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3);
+		s_Il2CppMethodInitialized = true;
+	}
 	{
 		// number = Random.Range(1, 15);
 		int32_t L_0;
 		L_0 = Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A(1, ((int32_t)15), /*hidden argument*/NULL);
-		__this->set_number_40(L_0);
+		__this->set_number_21(L_0);
 		// if (number == 1)
-		int32_t L_1 = __this->get_number_40();
+		int32_t L_1 = __this->get_number_21();
 		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
 		{
-			goto IL_002c;
+			goto IL_0020;
 		}
 	}
 	{
-		// BuySkins(1, 0, StarsBuyButton, StarsSkinButton, 5);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_StarsBuyButton_18();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3 = __this->get_StarsSkinButton_8();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 1, 0, L_2, L_3, 5, /*hidden argument*/NULL);
+		// BuySkins(1, 0, 5);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 1, 0, 5, /*hidden argument*/NULL);
 	}
 
-IL_002c:
+IL_0020:
 	{
 		// if (number == 2)
-		int32_t L_4 = __this->get_number_40();
-		if ((!(((uint32_t)L_4) == ((uint32_t)2))))
+		int32_t L_2 = __this->get_number_21();
+		if ((!(((uint32_t)L_2) == ((uint32_t)2))))
 		{
-			goto IL_004b;
+			goto IL_0033;
 		}
 	}
 	{
-		// BuySkins(2, 0, FoodBuyButton, FoodSkinButton, 10);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_FoodBuyButton_19();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_FoodSkinButton_9();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 2, 0, L_5, L_6, ((int32_t)10), /*hidden argument*/NULL);
+		// BuySkins(2, 0, 10);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 2, 0, ((int32_t)10), /*hidden argument*/NULL);
 	}
 
-IL_004b:
+IL_0033:
 	{
 		// if (number == 3)
-		int32_t L_7 = __this->get_number_40();
-		if ((!(((uint32_t)L_7) == ((uint32_t)3))))
+		int32_t L_3 = __this->get_number_21();
+		if ((!(((uint32_t)L_3) == ((uint32_t)3))))
 		{
-			goto IL_006a;
+			goto IL_0046;
 		}
 	}
 	{
-		// BuySkins(3, 0, LegoBuyButton, LegoSkinButton, 15);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_8 = __this->get_LegoBuyButton_20();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9 = __this->get_LegoSkinButton_10();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 3, 0, L_8, L_9, ((int32_t)15), /*hidden argument*/NULL);
+		// BuySkins(3, 0, 15);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 3, 0, ((int32_t)15), /*hidden argument*/NULL);
 	}
 
-IL_006a:
+IL_0046:
 	{
 		// if (number == 4)
-		int32_t L_10 = __this->get_number_40();
-		if ((!(((uint32_t)L_10) == ((uint32_t)4))))
+		int32_t L_4 = __this->get_number_21();
+		if ((!(((uint32_t)L_4) == ((uint32_t)4))))
 		{
-			goto IL_0089;
+			goto IL_0059;
 		}
 	}
 	{
-		// BuySkins(4, 0, FlowersBuyButton, FlowersSkinButton, 20);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = __this->get_FlowersBuyButton_21();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = __this->get_FlowersSkinButton_11();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 4, 0, L_11, L_12, ((int32_t)20), /*hidden argument*/NULL);
+		// BuySkins(4, 0, 20);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 4, 0, ((int32_t)20), /*hidden argument*/NULL);
 	}
 
-IL_0089:
+IL_0059:
 	{
 		// if (number == 5)
-		int32_t L_13 = __this->get_number_40();
-		if ((!(((uint32_t)L_13) == ((uint32_t)5))))
+		int32_t L_5 = __this->get_number_21();
+		if ((!(((uint32_t)L_5) == ((uint32_t)5))))
 		{
-			goto IL_00a8;
+			goto IL_006c;
 		}
 	}
 	{
-		// BuySkins(5, 0, HeartsBuyButton, HeartsSkinButton, 25);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14 = __this->get_HeartsBuyButton_22();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_HeartsSkinButton_12();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 5, 0, L_14, L_15, ((int32_t)25), /*hidden argument*/NULL);
+		// BuySkins(5, 0, 25);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 5, 0, ((int32_t)25), /*hidden argument*/NULL);
 	}
 
-IL_00a8:
+IL_006c:
 	{
 		// if (number == 6)
-		int32_t L_16 = __this->get_number_40();
-		if ((!(((uint32_t)L_16) == ((uint32_t)6))))
+		int32_t L_6 = __this->get_number_21();
+		if ((!(((uint32_t)L_6) == ((uint32_t)6))))
 		{
-			goto IL_00c7;
+			goto IL_007f;
 		}
 	}
 	{
-		// BuySkins(6, 0, HelloKittyBuyButton, HelloKittySkinButton, 30);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_17 = __this->get_HelloKittyBuyButton_23();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_18 = __this->get_HelloKittySkinButton_13();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 6, 0, L_17, L_18, ((int32_t)30), /*hidden argument*/NULL);
+		// BuySkins(6, 0, 30);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 6, 0, ((int32_t)30), /*hidden argument*/NULL);
 	}
 
-IL_00c7:
+IL_007f:
 	{
 		// if (number == 7)
-		int32_t L_19 = __this->get_number_40();
-		if ((!(((uint32_t)L_19) == ((uint32_t)7))))
+		int32_t L_7 = __this->get_number_21();
+		if ((!(((uint32_t)L_7) == ((uint32_t)7))))
 		{
-			goto IL_00e7;
+			goto IL_0093;
 		}
 	}
 	{
-		// BuySkins(7, 0, CrystalsBuyButton, CrystalsSkinButton, 35);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_20 = __this->get_CrystalsBuyButton_24();
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_CrystalsSkinButton_14();
-		ForCanvas_BuySkins_m74B7E67AB07E56A42CB5AB408907863CBE897403(__this, 7, 0, L_20, L_21, ((int32_t)35), /*hidden argument*/NULL);
+		// BuySkins(7, 0, 35);
+		ForCanvas_BuySkins_m64189DEA8277716E37EEE237CD7D9D4171EE2B9F(__this, 7, 0, ((int32_t)35), /*hidden argument*/NULL);
 		// }
 		return;
 	}
 
-IL_00e7:
+IL_0093:
 	{
 		// else if (number > 7)
-		int32_t L_22 = __this->get_number_40();
-		if ((((int32_t)L_22) <= ((int32_t)7)))
+		int32_t L_8 = __this->get_number_21();
+		if ((((int32_t)L_8) <= ((int32_t)7)))
 		{
-			goto IL_010c;
+			goto IL_00c8;
 		}
 	}
 	{
-		// money += Random.Range(10,50);
-		int32_t L_23 = __this->get_money_34();
-		int32_t L_24;
-		L_24 = Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A(((int32_t)10), ((int32_t)50), /*hidden argument*/NULL);
-		__this->set_money_34(((int32_t)il2cpp_codegen_add((int32_t)L_23, (int32_t)L_24)));
+		// money += Random.Range(10, 50);
+		int32_t L_9 = __this->get_money_15();
+		int32_t L_10;
+		L_10 = Random_Range_m4B3A0037ACA057F33C94508F908546B9317D996A(((int32_t)10), ((int32_t)50), /*hidden argument*/NULL);
+		__this->set_money_15(((int32_t)il2cpp_codegen_add((int32_t)L_9, (int32_t)L_10)));
+		// PlayerPrefs.SetInt("Money", money);
+		int32_t L_11 = __this->get_money_15();
+		PlayerPrefs_SetInt_m0C5C977E960B9CA8F9AB73AF4129C3DCABD067B6(_stringLiteral4783348997FD98C18DE1576BBDFDC07F874F5EE3, L_11, /*hidden argument*/NULL);
 		// Update();
 		ForCanvas_Update_mA06BFD63823C21296229879DCC90282B59F18F68(__this, /*hidden argument*/NULL);
 	}
 
-IL_010c:
+IL_00c8:
 	{
 		// }
 		return;
@@ -13342,16 +13262,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_pause_m5C2E91787183E081DD207E0
 {
 	{
 		// CanvasForPause.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_CanvasForPause_43();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_CanvasForPause_24();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// Time.timeScale = 0f;
 		Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA((0.0f), /*hidden argument*/NULL);
 		// Resume.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_Resume_42();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_Resume_23();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)1, /*hidden argument*/NULL);
 		// Pause.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_Pause_41();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_Pause_22();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)0, /*hidden argument*/NULL);
+		// Music.AS.Stop();
+		Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * L_3 = __this->get_Music_25();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_4 = L_3->get_AS_8();
+		AudioSource_Stop_mADA564D223832A64F8CF3EFBDEB534C0D658810F(L_4, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13361,16 +13285,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas_resume_mAE1837690886F7C05FF025
 {
 	{
 		// CanvasForPause.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_CanvasForPause_43();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_0 = __this->get_CanvasForPause_24();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)0, /*hidden argument*/NULL);
 		// Time.timeScale = 1f;
 		Time_set_timeScale_m1987DE9E74FC6C0126CE4F59A6293E3B85BD01EA((1.0f), /*hidden argument*/NULL);
 		// Resume.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_Resume_42();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_Resume_23();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_1, (bool)0, /*hidden argument*/NULL);
 		// Pause.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_Pause_41();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_2 = __this->get_Pause_22();
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_2, (bool)1, /*hidden argument*/NULL);
+		// Music.AS.Play();
+		Music_t4EE39761E89D9F3B3BE1D1D903CB957E1EA3CC4F * L_3 = __this->get_Music_25();
+		AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * L_4 = L_3->get_AS_8();
+		AudioSource_Play_mED16664B8F8F3E4D68785C8C00FC96C4DF053AE1(L_4, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -13393,17 +13321,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForCanvas__ctor_mA13577E068ED426012CF839
 		// [SerializeField] List<GameObject> Boards = new List<GameObject>();
 		List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 * L_0 = (List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5 *)il2cpp_codegen_object_new(List_1_t6D0A10F47F3440798295D2FFFC6D016477AF38E5_il2cpp_TypeInfo_var);
 		List_1__ctor_m859B0EE8491FDDEB1A3F7115D334B863E025BBC8(L_0, /*hidden argument*/List_1__ctor_m859B0EE8491FDDEB1A3F7115D334B863E025BBC8_RuntimeMethod_var);
-		__this->set_Boards_30(L_0);
+		__this->set_Boards_11(L_0);
 		// [SerializeField] List<Board> boards = new List<Board>();
 		List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 * L_1 = (List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141 *)il2cpp_codegen_object_new(List_1_tE8CB04A1B6244D4BE8BF18117B697873C3EA0141_il2cpp_TypeInfo_var);
 		List_1__ctor_mB71FE390A55925FE816A267F0D1ACD7D98337A3C(L_1, /*hidden argument*/List_1__ctor_mB71FE390A55925FE816A267F0D1ACD7D98337A3C_RuntimeMethod_var);
-		__this->set_boards_31(L_1);
+		__this->set_boards_12(L_1);
 		// [SerializeField] List<Piece> trackingPieces = new List<Piece>();
 		List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 * L_2 = (List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1 *)il2cpp_codegen_object_new(List_1_t54D9D143A2F4DC1E954E882F54BB946566E689B1_il2cpp_TypeInfo_var);
 		List_1__ctor_m6EBD63F5F48614032DEF2ABDCF47C75028D46601(L_2, /*hidden argument*/List_1__ctor_m6EBD63F5F48614032DEF2ABDCF47C75028D46601_RuntimeMethod_var);
-		__this->set_trackingPieces_32(L_2);
+		__this->set_trackingPieces_13(L_2);
 		// public int countMoney = 1;
-		__this->set_countMoney_35(1);
+		__this->set_countMoney_16(1);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
