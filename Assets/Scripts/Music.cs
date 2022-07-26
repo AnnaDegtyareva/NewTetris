@@ -11,6 +11,7 @@ public class Music : MonoBehaviour
     public AudioClip[] audioClips; // массив аудио эффектов
     public AudioMixerGroup[] audioGroup; // массив аудио групп
     [SerializeField] public AudioSource AS;
+    [HideInInspector] public bool MusicIsOff = false;
 
     public void PlaySound(int soundNum, int soundGroup)
     {
@@ -31,13 +32,22 @@ public class Music : MonoBehaviour
         MusicOFF.SetActive(true);
         //выкл музыки
         AS.Stop();
-        
+        MusicIsOff = true;
     }
     public void musicON()
     {
         MusicON.SetActive(true);
         MusicOFF.SetActive(false);
         PlaySound((Random.Range(0, 20)), (Random.Range(0, 20)));
+        MusicIsOff = false;
     }
-    
+    public void PauseMusic(bool isPause)
+    {
+        if (MusicIsOff)
+            return;
+        if (isPause)
+            AS.Stop();
+        else
+            AS.Play();
+    }
 }

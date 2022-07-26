@@ -333,7 +333,7 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 0f;
         Resume.SetActive(true);
         Pause.SetActive(false);
-        Music.AS.Stop(); // доп проверкм надо
+        Music.PauseMusic(true);
     }
     public void resume()
     {
@@ -341,9 +341,8 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 1f;
         Resume.SetActive(false);
         Pause.SetActive(true);
-        Music.AS.Play();
+        Music.PauseMusic(false);
     }
-
 }
 
 
