@@ -13018,7 +13018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 741ddfb07c8bca84688e2e02ca78dfb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CorrectPosAtFullHD: {x: 340, y: 320}
+  CorrectPosAtFullHD: {x: 340, y: 220}
   CorrectSizeAtFullHD: {x: 545, y: 685}
 --- !u!1 &1805621690
 GameObject:

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
+using YG;
 
 public class Board : MonoBehaviour
 {
@@ -158,7 +159,12 @@ public class Board : MonoBehaviour
             this.tilemap.SetTile(position, null);
         }
         ForCanvas.money += ForCanvas.countMoney;
-        PlayerPrefs.SetInt("Money", ForCanvas.money);
+        //PlayerPrefs.SetInt("Money", ForCanvas.money);
+
+        YandexGame.savesData.money = ForCanvas.money;
+
+        YandexGame.SaveProgress();
+
         ForCanvas.MoneyText.text = ForCanvas.money.ToString();
 
         while (row < bounds.yMax)

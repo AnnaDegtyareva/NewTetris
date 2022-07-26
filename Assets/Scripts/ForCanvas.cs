@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 public class ForCanvas : MonoBehaviour
 {
@@ -42,6 +43,19 @@ public class ForCanvas : MonoBehaviour
     //music
     [SerializeField] Music Music;
 
+    //cloud saves (load)
+    private void Awake()
+    {
+        YandexGame.GetDataEvent += LoadSaves;
+    }
+    public void LoadSaves()
+    {
+        money = YandexGame.savesData.money;
+        MoneyText.text = money.ToString();
+
+        PrintSaveSkins();
+    }
+
     public void BoardsSwitcher(int index)
     {
         for (int i = 0; i < Boards.Count; i++)
@@ -64,8 +78,12 @@ public class ForCanvas : MonoBehaviour
             countSkins++;
             countMoney = CountMoney;
             money -= price;
-            PlayerPrefs.SetInt(index + "shop", 1);
-            PlayerPrefs.SetInt("Money", money);
+            YandexGame.savesData.shop[index] = 1;
+            YandexGame.savesData.money = money;
+
+            YandexGame.SaveProgress();
+            //PlayerPrefs.SetInt(index + "shop", 1);
+            //PlayerPrefs.SetInt("Money", money);
         }
 
     }
@@ -73,7 +91,7 @@ public class ForCanvas : MonoBehaviour
     {
         for (int i = 0; i < Boards.Count; i++)
         {
-            if (PlayerPrefs.GetInt(i + "shop", 0) == 1)
+            if (YandexGame.savesData.shop[i] == 1)
             {
                 BoardsSwitcher(i);
                 ButtonsForBuySkins[i].SetActive(false);
@@ -93,8 +111,8 @@ public class ForCanvas : MonoBehaviour
         //on and off boards
         BoardsSwitcher(0);
         //money
-        money = PlayerPrefs.GetInt("Money");
-        MoneyText.text = money.ToString();
+        //money = PlayerPrefs.GetInt("Money");
+        //MoneyText.text = money.ToString();
         //off and on buttons for dress skins
         for (int i = 0; i < ButtonsForDressSkins.Count; i++)
         {
@@ -141,7 +159,11 @@ public class ForCanvas : MonoBehaviour
         //On AD
         //Give random quantity money
         money += Random.Range(10, 50);
-        PlayerPrefs.SetInt("Money", money);
+
+        YandexGame.savesData.money = money;
+
+        YandexGame.SaveProgress();
+        //PlayerPrefs.SetInt("Money", money);
         Update();
     }
     public void Exit()
@@ -296,7 +318,11 @@ public class ForCanvas : MonoBehaviour
         else if (number > 7)
         {
             money += Random.Range(10, 50);
-            PlayerPrefs.SetInt("Money", money);
+
+            YandexGame.savesData.money = money;
+
+            YandexGame.SaveProgress();
+            //PlayerPrefs.SetInt("Money", money);
             Update();
         }
     }
@@ -307,7 +333,7 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 0f;
         Resume.SetActive(true);
         Pause.SetActive(false);
-        Music.AS.Stop();
+        Music.AS.Stop(); // доп проверкм надо
     }
     public void resume()
     {
