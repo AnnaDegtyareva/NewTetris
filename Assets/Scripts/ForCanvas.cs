@@ -6,6 +6,8 @@ using YG;
 
 public class ForCanvas : MonoBehaviour
 {
+    public static bool IsPause = false;
+
     //Canvas
     [SerializeField] GameObject StartCanvas;
     [SerializeField] GameObject SkinsCanvas;
@@ -145,14 +147,20 @@ public class ForCanvas : MonoBehaviour
     public void Help()
     {
         HelpCanvas.SetActive(true);
+
+        SetPause(true);
     }
     public void Skins()
     {
         SkinsCanvas.SetActive(true);
+
+        SetPause(true);
     }
     public void Shop()
     {
         ShopCanvas.SetActive(true);
+
+        SetPause(true);
     }
     public void FreeMoney()
     {
@@ -172,6 +180,8 @@ public class ForCanvas : MonoBehaviour
         SkinsCanvas.SetActive(false);
         ShopCanvas.SetActive(false);
         HelpCanvas.SetActive(false);
+
+        SetPause(false);
     }
 
     //functions for dress skins
@@ -229,8 +239,6 @@ public class ForCanvas : MonoBehaviour
         //dress skin
         BoardsSwitcher(10);
     }
-    
-
     //functions for buy skins
     public void buyStars()
     {
@@ -334,6 +342,8 @@ public class ForCanvas : MonoBehaviour
         Resume.SetActive(true);
         Pause.SetActive(false);
         Music.PauseMusic(true);
+
+        SetPause(true);
     }
     public void resume()
     {
@@ -342,6 +352,12 @@ public class ForCanvas : MonoBehaviour
         Resume.SetActive(false);
         Pause.SetActive(true);
         Music.PauseMusic(false);
+
+        SetPause(false);
+    }
+    public void SetPause(bool value)
+    {
+        IsPause = value;
     }
 }
 

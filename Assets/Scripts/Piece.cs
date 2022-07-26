@@ -36,34 +36,37 @@ public class Piece : MonoBehaviour
     {
         this.board.Clear(this);
 
-        this.lockTime += Time.deltaTime; 
+        this.lockTime += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!ForCanvas.IsPause)
         {
-            Rotate(-1);
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            Rotate(1);
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                Rotate(-1);
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                Rotate(1);
+            }
 
-        if ((Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.LeftArrow)))
-        {
-            Move(Vector2Int.left);
-        }
-        else if ((Input.GetKeyDown(KeyCode.D)) || (Input.GetKeyDown(KeyCode.RightArrow)))
-        {
-            Move(Vector2Int.right);
-        }
+            if ((Input.GetKeyDown(KeyCode.A)) || (Input.GetKeyDown(KeyCode.LeftArrow)))
+            {
+                Move(Vector2Int.left);
+            }
+            else if ((Input.GetKeyDown(KeyCode.D)) || (Input.GetKeyDown(KeyCode.RightArrow)))
+            {
+                Move(Vector2Int.right);
+            }
 
-        if ((Input.GetKeyDown(KeyCode.S)) || (Input.GetKeyDown(KeyCode.DownArrow)))
-        {
-            Move(Vector2Int.down);
-        }
+            if ((Input.GetKeyDown(KeyCode.S)) || (Input.GetKeyDown(KeyCode.DownArrow)))
+            {
+                Move(Vector2Int.down);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            HardDrop();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                HardDrop();
+            }
         }
 
         if (Time.time >= this.stepTime)
