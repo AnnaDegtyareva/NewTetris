@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using YG;
 
 public class Music : MonoBehaviour
 {
@@ -22,9 +23,9 @@ public class Music : MonoBehaviour
     void Start()
     {
         //on and off music
-        MusicOFF.SetActive(false);
-        MusicON.SetActive(true);
-        PlaySound((Random.Range(0,20)), (Random.Range(0, 20)));
+        //MusicOFF.SetActive(false);
+        //MusicON.SetActive(true);
+        //PlaySound((Random.Range(0,20)), (Random.Range(0, 20)));
     }
     public void musicOFF()
     {
@@ -33,6 +34,10 @@ public class Music : MonoBehaviour
         //выкл музыки
         AS.Stop();
         MusicIsOff = true;
+
+        YandexGame.savesData.IsMusic = false;
+
+        //YandexGame.SaveProgress();
     }
     public void musicON()
     {
@@ -40,6 +45,10 @@ public class Music : MonoBehaviour
         MusicOFF.SetActive(false);
         PlaySound((Random.Range(0, 20)), (Random.Range(0, 20)));
         MusicIsOff = false;
+
+        YandexGame.savesData.IsMusic = true;
+
+        //YandexGame.SaveProgress();
     }
     public void PauseMusic(bool isPause)
     {

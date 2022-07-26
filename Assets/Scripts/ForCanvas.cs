@@ -56,6 +56,15 @@ public class ForCanvas : MonoBehaviour
         MoneyText.text = money.ToString();
 
         PrintSaveSkins();
+
+        if (YandexGame.savesData.IsMusic)
+        {
+            Music.musicON();
+        }
+        else
+        {
+            Music.musicOFF();
+        }
     }
 
     public void BoardsSwitcher(int index)
@@ -149,18 +158,21 @@ public class ForCanvas : MonoBehaviour
         HelpCanvas.SetActive(true);
 
         SetPause(true);
+        Time.timeScale = 0f;
     }
     public void Skins()
     {
         SkinsCanvas.SetActive(true);
 
         SetPause(true);
+        Time.timeScale = 0f;
     }
     public void Shop()
     {
         ShopCanvas.SetActive(true);
 
         SetPause(true);
+        Time.timeScale = 0f;
     }
     public void FreeMoney()
     {
@@ -182,6 +194,7 @@ public class ForCanvas : MonoBehaviour
         HelpCanvas.SetActive(false);
 
         SetPause(false);
+        Time.timeScale = 1f;
     }
 
     //functions for dress skins

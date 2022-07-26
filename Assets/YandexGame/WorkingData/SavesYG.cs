@@ -8,7 +8,8 @@ namespace YG
         public string language = "ru";
 
         // Ваши сохранения
-        public int money = 1;
+        public int money = 0;
         public int[] shop = new int[11];
+        public bool IsMusic = true;
     }
 }
