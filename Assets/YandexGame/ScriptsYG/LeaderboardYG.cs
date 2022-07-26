@@ -101,9 +101,13 @@ namespace YG
 
                             sampleContainer.transform.Find("Rank").GetComponentInChildren<Text>().text = rank[i].ToString();
                             sampleContainer.transform.Find("Name").GetComponentInChildren<Text>().text = playersName[i];
+
                             if (!timeTypeConvert)
                                 sampleContainer.transform.Find("Score").GetComponentInChildren<Text>().text = scorePlayers[i].ToString();
-                            else sampleContainer.transform.Find("Score").GetComponentInChildren<Text>().text = scorePlayers[i].ToString("D4").Insert(2, ":");
+
+                            else 
+                                sampleContainer.transform.Find("Score").GetComponentInChildren<Text>().text = scorePlayers[i].ToString("D4").Insert(2, ":");
+
                             if (photo[i] != "nonePhoto")
                                 sampleContainer.transform.Find("Photo").GetComponentInChildren<ImageLoadYG>().Load(photo[i]);
                         }

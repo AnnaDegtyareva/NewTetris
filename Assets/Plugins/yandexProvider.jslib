@@ -35,7 +35,7 @@ mergeInto(LibraryManager.library,
 		GetLeaderboardScores(Pointer_stringify(nameLB), maxPlayers, quantityTop, quantityAround, Pointer_stringify(photoSizeLB), auth);
 	},
 
-	FullscreenShow: function ()
+	FullAdShow: function ()
 	{
 		FullscreenShow();
 	},
@@ -58,5 +58,102 @@ mergeInto(LibraryManager.library,
 	Review: function()
 	{
 		Review();
-	}	
+	},
+	
+	ActivityRTB1: function(state)
+	{
+		ActivityRTB1(state);
+	},
+	
+	ActivityRTB2: function(state)
+	{
+		ActivityRTB2(state);
+	},
+	
+	ActivityRTB3: function(state)
+	{
+		ActivityRTB3(state);
+	},
+	
+	ActivityRTB4: function(state)
+	{
+		ActivityRTB4(state);
+	},
+	
+	RenderRTB1: function()
+	{
+		RenderRTB1();
+	},
+	
+	RenderRTB2: function()
+	{
+		RenderRTB2();
+	},
+	
+	RenderRTB3: function()
+	{
+		RenderRTB3();
+	},
+	
+	RenderRTB4: function()
+	{
+		RenderRTB4();
+	},
+	
+	RecalculateRTB1: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	{
+		RecalculateRTB1(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_right),
+			Pointer_stringify(_top),
+			Pointer_stringify(_bottom),
+			Pointer_stringify(_offset));
+	},
+	
+	RecalculateRTB2: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	{
+		RecalculateRTB2(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_right),
+			Pointer_stringify(_top),
+			Pointer_stringify(_bottom),
+			Pointer_stringify(_offset));
+	},
+	
+	RecalculateRTB3: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	{
+		RecalculateRTB3(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_right),
+			Pointer_stringify(_top),
+			Pointer_stringify(_bottom),
+			Pointer_stringify(_offset));
+	},
+	
+	RecalculateRTB4: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	{
+		RecalculateRTB4(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_right),
+			Pointer_stringify(_top),
+			Pointer_stringify(_bottom),
+			Pointer_stringify(_offset));
+	},
+	
+	GetURLFromPage: function () {
+        var returnStr = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        var bufferSize = lengthBytesUTF8(returnStr) + 1;
+        var buffer = _malloc(bufferSize);
+        stringToUTF8(returnStr, buffer, bufferSize);
+		
+        return buffer;
+    }
 });

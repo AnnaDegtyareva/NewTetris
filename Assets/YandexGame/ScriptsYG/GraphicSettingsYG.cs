@@ -13,22 +13,30 @@ namespace YG
         [SerializeField] string[] ru = new string[6];
         [SerializeField] string[] en = new string[6];
         [SerializeField] string[] tr = new string[6];
-        [SerializeField] string[] az;
-        [SerializeField] string[] be;
-        [SerializeField] string[] he;
-        [SerializeField] string[] hy;
-        [SerializeField] string[] ka;
-        [SerializeField] string[] et;
-        [SerializeField] string[] fr;
-        [SerializeField] string[] kk;
-        [SerializeField] string[] ky;
-        [SerializeField] string[] lt;
-        [SerializeField] string[] lv;
-        [SerializeField] string[] ro;
-        [SerializeField] string[] tg;
-        [SerializeField] string[] tk;
-        [SerializeField] string[] uk;
-        [SerializeField] string[] uz;
+        [SerializeField] string[] az = new string[6];
+        [SerializeField] string[] be = new string[6];
+        [SerializeField] string[] he = new string[6];
+        [SerializeField] string[] hy = new string[6];
+        [SerializeField] string[] ka = new string[6];
+        [SerializeField] string[] et = new string[6];
+        [SerializeField] string[] fr = new string[6];
+        [SerializeField] string[] kk = new string[6];
+        [SerializeField] string[] ky = new string[6];
+        [SerializeField] string[] lt = new string[6];
+        [SerializeField] string[] lv = new string[6];
+        [SerializeField] string[] ro = new string[6];
+        [SerializeField] string[] tg = new string[6];
+        [SerializeField] string[] tk = new string[6];
+        [SerializeField] string[] uk = new string[6];
+        [SerializeField] string[] uz = new string[6];
+        [SerializeField] string[] es = new string[6];
+        [SerializeField] string[] pt = new string[6];
+        [SerializeField] string[] ar = new string[6];
+        [SerializeField] string[] id = new string[6];
+        [SerializeField] string[] ja = new string[6];
+        [SerializeField] string[] it = new string[6];
+        [SerializeField] string[] de = new string[6];
+        [SerializeField] string[] hi = new string[6];
 
         void Start()
         {
@@ -149,6 +157,46 @@ namespace YG
                     labelText.text = uz[QualitySettings.GetQualityLevel()];
                     for (int i = 0; i < uz.Length; i++)
                         dropdown.options[i].text = uz[i];
+                    break;
+                case "es":
+                    labelText.text = es[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < es.Length; i++)
+                        dropdown.options[i].text = es[i];
+                    break;
+                case "pt":
+                    labelText.text = pt[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < pt.Length; i++)
+                        dropdown.options[i].text = pt[i];
+                    break;
+                case "ar":
+                    labelText.text = ar[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < ar.Length; i++)
+                        dropdown.options[i].text = ar[i];
+                    break;
+                case "id":
+                    labelText.text = id[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < id.Length; i++)
+                        dropdown.options[i].text = id[i];
+                    break;
+                case "ja":
+                    labelText.text = ja[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < ja.Length; i++)
+                        dropdown.options[i].text = ja[i];
+                    break;
+                case "it":
+                    labelText.text = it[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < it.Length; i++)
+                        dropdown.options[i].text = it[i];
+                    break;
+                case "de":
+                    labelText.text = de[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < de.Length; i++)
+                        dropdown.options[i].text = de[i];
+                    break;
+                case "hi":
+                    labelText.text = hi[QualitySettings.GetQualityLevel()];
+                    for (int i = 0; i < hi.Length; i++)
+                        dropdown.options[i].text = hi[i];
                     break;
                 default:
                     labelText.text = en[QualitySettings.GetQualityLevel()];

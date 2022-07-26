@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace YG
 {
@@ -23,79 +24,32 @@ namespace YG
         public UnityEvent CheaterVideoAd;
 
         #region Data Fields
-        public static bool startGame
-        {
-            get
-            {
-                return _startGame;
-            }
-        }
-        public static bool auth
-        {
-            get
-            {
-                return _auth;
-            }
-        }
-        public static bool initializedLB
-        {
-            get
-            {
-                return _initializedLB;
-            }
-        }
+        public static bool SDKEnabled { get => _SDKEnabled; }
+        public static bool auth { get => _auth; }
+        public static bool initializedLB { get => _initializedLB; }
         public static string playerName
         {
-            get
-            {
-                return _playerName;
-            }
-            set
-            {
-                _photoSize = value;
-            }
+            get => _playerName;
+            set => _playerName = value;
         }
-        public static string playerId
-        {
-            get
-            {
-                return _playerId;
-            }
-        }
+        public static string playerId { get => _playerId; }
         public static string playerPhoto
         {
-            get
-            {
-                return _playerPhoto;
-            }
-            set
-            {
-                _photoSize = value;
-            }
+            get => _playerPhoto;
+            set => _playerPhoto = value;
         }
         public static bool adBlock
         {
-            get
-            {
-                return _adBlock;
-            }
-            set
-            {
-                _adBlock = value;
-            }
+            get => _adBlock;
+            set => _adBlock = value;
         }
         public static string photoSize
         {
-            get
-            {
-                return _photoSize;
-            }
-            set
-            {
-                _photoSize = value;
-            }
+            get => _photoSize;
+            set => _photoSize = value;
         }
 
+        static bool _SDKEnabled;
         static bool _startGame;
         static bool _auth;
         static bool _initializedLB;
@@ -106,9 +60,10 @@ namespace YG
         static string _photoSize;
         static bool _leaderboardEnable;
         static bool _debug;
-        static bool _cloudSaves;
         static bool _scopes;
-        public static JsonSaves savesData = new JsonSaves();
+        public static bool nowFullAd;
+        public static bool nowVideoAd;
+        public static SavesYG savesData = new SavesYG();
         public static JsonEnvironmentData EnvironmentData = new JsonEnvironmentData();
         #endregion Data Fields
 
@@ -120,10 +75,16 @@ namespace YG
             transform.SetParent(null);
             gameObject.name = "YandexGame";
 
+            onFullAdShow = null;
+            onFullAdShow += _FullscreenShow;
+
+            onRewAdShow = null;
+            onRewAdShow += _RewardedShow;
+
             if (infoYG.fullscreenAdChallenge == InfoYG.FullscreenAdChallenge.atStartupEndSwitchScene)
                 _FullscreenShow();
         }
-        
+
         static void Message(string message)
         {
             if (_debug) Debug.Log(message);
@@ -147,6 +108,11 @@ namespace YG
 
                 _AuthorizationCheck();
                 _RequestingEnvironmentData();
+
+#if !UNITY_EDITOR
+                if (infoYG.siteLock)
+                    Invoke("SiteLock", 1);
+#endif
             }
         }
 
@@ -176,16 +142,19 @@ namespace YG
         public static Action GetDataEvent;
 
 #if UNITY_EDITOR
+        
         public static void SaveLocal()
         {
-            if (!Directory.Exists(Application.persistentDataPath + "/SavesYG"))
+            string path = Application.dataPath + "/YandexGame/WorkingData/";
+
+            if (!Directory.Exists(path))
             {
-                Directory.CreateDirectory(Application.persistentDataPath + "/SavesYG");
+                Directory.CreateDirectory(path);
                 Message("Save Unity Editor: Create New Directory");
             }
             else Message("Save Unity Editor");
 
-            FileStream fs = new FileStream(Application.persistentDataPath + "/SavesYG/saveyg.svyg", FileMode.Create);
+            FileStream fs = new FileStream(path + "saveyg.yg", FileMode.Create);
             BinaryFormatter formatter = new BinaryFormatter();
             formatter.Serialize(fs, savesData);
             fs.Close();
@@ -193,72 +162,110 @@ namespace YG
 
         public static void LoadLocal()
         {
+            string path = Application.dataPath + "/YandexGame/WorkingData/";
             Message("Load Unity Editor");
 
-            if (File.Exists(Application.persistentDataPath + "/SavesYG/saveyg.svyg")) // если файл есть
+            if (File.Exists(path + "saveyg.yg")) // если файл есть
             {
-                FileStream fs = new FileStream(Application.persistentDataPath + "/SavesYG/saveyg.svyg", FileMode.Open);
+                FileStream fs = new FileStream(path + "saveyg.yg", FileMode.Open);
                 BinaryFormatter formatter = new BinaryFormatter();
                 try // загрузка
                 {
-                    savesData = (JsonSaves)formatter.Deserialize(fs);
+                    savesData = (SavesYG)formatter.Deserialize(fs);
+                    _SDKEnabled = true;
                     GetDataEvent?.Invoke();
                     SwitchLangEvent?.Invoke(savesData.language);
                 }
-                catch (System.Exception e) // если файл поломан
+                catch (Exception e) // если файл поломан
                 {
                     Debug.Log(e.Message);
-                    ResetSaveProgress(true);
+                    ResetSaveProgress();
                 }
                 finally
                 {
                     fs.Close();
-                }
+                } 
             }
-            else ResetSaveProgress(true);
+            else ResetSaveProgress();
         }
 #endif
 
-        public static Action onMessageLogInEvent;
-        public static void ResetSaveProgress(bool massage)
-        {
-            Message("Reset Save Progress");
-
-            if (!auth && massage)
-                onMessageLogInEvent?.Invoke();
-
-            savesData = new JsonSaves { isFirstSession = false };
-
-            SwitchLangEvent?.Invoke(savesData.language);
-
-            GetDataEvent?.Invoke();
-        }
-
         public static void ResetSaveProgress()
         {
-            ResetSaveProgress(false);
+            Message("Reset Save Progress");
+            savesData = new SavesYG { isFirstSession = false };
+
+            _SDKEnabled = true;
+            SwitchLangEvent?.Invoke(savesData.language);
+            GetDataEvent?.Invoke();
         }
 
         public static void SaveProgress()
         {
+            if (_SDKEnabled)
+            {
 #if !UNITY_EDITOR
-            SaveCloud(false);
+                SaveCloud(false);
+#else
+                SaveLocal();
 #endif
-#if UNITY_EDITOR
-            SaveLocal();
-#endif
+            }
         }
 
         public static void LoadProgress()
         {
 #if !UNITY_EDITOR
             LoadCloud();
-#endif
-#if UNITY_EDITOR
+#else
             LoadLocal();
 #endif
         }
         #endregion Player Data        
+
+        #region SiteLock
+        [DllImport("__Internal")]
+        private static extern string GetURLFromPage();
+
+        void SiteLock()
+        {
+            try 
+            {
+                string urlOrig = GetURLFromPage();
+
+                string localhost = "http://localhost";
+                if (urlOrig.Remove(localhost.Length) != localhost)
+                {
+                    string plaedLinks = urlOrig.Remove(0, 15);
+                    plaedLinks = plaedLinks.Remove(0, EnvironmentData.domain.Length + 1);
+                    string[] plaedSplit = plaedLinks.Split('/');
+                    plaedLinks = $"{plaedSplit[0]}/{plaedSplit[1]}";
+
+                    string urlCheck = $"https://yandex.{EnvironmentData.domain}/{plaedLinks}/{EnvironmentData.appID}";
+
+                    if (urlOrig.Remove(urlCheck.Length) != urlCheck)
+                    {
+                        Crash();
+                    }
+                }
+            }
+            catch
+            {
+                Crash();
+            }
+        }
+
+        void Crash()
+        {
+            GameObject errMessage = new GameObject { name = "siteLock" };
+            errMessage.AddComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            errMessage.AddComponent<GraphicRaycaster>();
+            errMessage.AddComponent<RawImage>();
+
+            Time.timeScale = 0;
+            AudioListener.volume = 0;
+            AudioListener.pause = true;
+        }
+        #endregion SiteLock
 
 
         // Sending messages
@@ -271,8 +278,7 @@ namespace YG
         {
 #if !UNITY_EDITOR
             AuthorizationCheck( _photoSize, infoYG.scopes);
-#endif
-#if UNITY_EDITOR
+#else
             SetAuthorization(@"{""playerAuth""" + ": " + @"""resolved""," + @"""playerName""" + ": " + @"""Ivan"", " + @"""playerId""" + ": " + @"""tOpLpSh7i8QG8Voh/SuPbeS4NKTj1OxATCTKQF92H4c="", " + @"""playerPhoto""" + ": " + @"""https://avatars.mds.yandex.net/get-yapic/35885/sQA4bpZ5JEWQkyz2x15TzAIO2kg-1/islands-300""}");
 #endif
         }
@@ -340,24 +346,46 @@ namespace YG
 
         #region Fullscren Ad Show
         [DllImport("__Internal")]
-        private static extern void FullscreenShow();
+        private static extern void FullAdShow();
 
         public void _FullscreenShow()
         {
-            if (timerShowAd >= 65)
+            if (timerShowAd >= 31)
             {
                 timerShowAd = 0;
 #if !UNITY_EDITOR
-                        FullscreenShow();
-#endif
-#if UNITY_EDITOR
+                FullAdShow();
+#else
                 Message("Fullscren Ad");
                 OpenFullscreen();
-                Invoke("CloseFullscreen", 1);
+                StartCoroutine(TestCloseFullAd());
 #endif
             }
-            else Message("The display of full-screen ads is blocked! It's still early.  (ru) Отображение полноэкранной рекламы заблокировано! Еще рано.");
+            else Message("(ru) Отображение полноэкранной рекламы заблокировано! Еще рано.  (en) The display of full-screen ads is blocked! It's still early.");
         }
+
+        static Action onFullAdShow;
+        public static void FullscreenShow()
+        {
+            onFullAdShow?.Invoke();
+        }
+
+#if UNITY_EDITOR
+        IEnumerator TestCloseFullAd()
+        {
+            GameObject errMessage = new GameObject { name = "TestFullAd" };
+            Canvas canvas = errMessage.AddComponent<Canvas>();
+            canvas.sortingOrder = 9995;
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            errMessage.AddComponent<GraphicRaycaster>();
+            errMessage.AddComponent<RawImage>().color = new Color(0, 1, 0, 0.5f);
+
+            yield return new WaitForSecondsRealtime(1);
+
+            Destroy(errMessage);
+            CloseFullscreen();
+        }
+#endif
         #endregion Fullscren Ad Show
 
         #region Rewarded Video Show
@@ -373,17 +401,18 @@ namespace YG
                 if (!adBlock)
                 {
                     adBlock = true;
-                    StartCoroutine(MissAdBlock(5));
+                    StartCoroutine(MissAdBlock(3));
                     RewardedShow(id);
                 }
             }
             else RewardedShow(id);
-#endif
-#if UNITY_EDITOR
-            if (infoYG.checkAdblock)
+#else
+            if (!infoYG.checkAdblock)
             {
                 Message("Cheater!");
-                Invoke("TestCheater", 1);
+
+                CheaterVideoAd.Invoke();
+                CheaterVideoEvent?.Invoke();
             }
             else
             {
@@ -391,6 +420,12 @@ namespace YG
                 StartCoroutine(TestCloseVideo(id));
             }
 #endif
+        }
+
+        static Action<int> onRewAdShow;
+        public static void RewVideoShow(int id)
+        {
+            onRewAdShow?.Invoke(id);
         }
 
         IEnumerator MissAdBlock(float timer)
@@ -402,14 +437,17 @@ namespace YG
 #if UNITY_EDITOR
         IEnumerator TestCloseVideo(int id)
         {
-            yield return new WaitForSecondsRealtime(1);
-            CloseVideo(id);
-        }
+            GameObject errMessage = new GameObject { name = "TestVideoAd" };
+            Canvas canvas = errMessage.AddComponent<Canvas>();
+            canvas.sortingOrder = 9995;
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            errMessage.AddComponent<GraphicRaycaster>();
+            errMessage.AddComponent<RawImage>().color = new Color(0, 0, 1, 0.5f);
 
-        void TestCheater()
-        {
-            CheaterVideoAd.Invoke();
-            CheaterVideoEvent?.Invoke();
+            yield return new WaitForSecondsRealtime(1);
+
+            Destroy(errMessage);
+            CloseVideo(id);
         }
 #endif
         #endregion Rewarded Video Show
@@ -445,7 +483,12 @@ namespace YG
         #region URL
         public void _OnURL(string url)
         {
+#if !UNITY_EDITOR
             Application.OpenURL("https://yandex." + EnvironmentData.domain + "/games/" + url);
+#endif
+#if UNITY_EDITOR
+            Application.OpenURL("https://yandex." + "ru/games/" + url);
+#endif
             Message("URL");
         }
 
@@ -539,21 +582,25 @@ namespace YG
 
         // Receiving messages
 
-        #region Ads
+        #region Fullscren Ad
         public static Action OpenFullAdEvent;
         public void OpenFullscreen()
         {
             OpenFullscreenAd.Invoke();
             OpenFullAdEvent?.Invoke();
+            nowFullAd = true;
         }
 
         public static Action CloseFullAdEvent;
         public void CloseFullscreen()
         {
+            nowFullAd = false;
             CloseFullscreenAd.Invoke();
             CloseFullAdEvent?.Invoke();
         }
+        #endregion Fullscren Ad
 
+        #region Rewarded Video
         public delegate void OpenRewAd(int id);
         public static event OpenRewAd OpenVideoEvent;
 
@@ -561,6 +608,7 @@ namespace YG
         {
             OpenVideoEvent?.Invoke(id);
             OpenVideoAd.Invoke();
+            nowVideoAd = true;
         }
 
         public delegate void CloseRewAd(int id);
@@ -570,6 +618,7 @@ namespace YG
 
         public void CloseVideo(int id)
         {
+            nowVideoAd = false;
             if (infoYG.checkAdblock && _adBlock)
             {
                 CheaterVideoAd.Invoke();
@@ -584,7 +633,7 @@ namespace YG
                 CloseVideoEvent?.Invoke(id);
             }
         }
-        #endregion Ads
+        #endregion Rewarded Video
 
         #region Authorization
         JsonAuth jsonAuth = new JsonAuth();
@@ -622,269 +671,263 @@ namespace YG
 #endif
             }
         }
-#endregion Set Authorization
+        #endregion Set Authorization
 
         #region Loading progress
-                public void SetLoadSaves(string data)
-                {
-                    data = data.Remove(0, 2);
-                    data = data.Remove(data.Length - 2, 2);
-                    data = data.Replace(@"\", "");
+        public void SetLoadSaves(string data)
+        {
+            data = data.Remove(0, 2);
+            data = data.Remove(data.Length - 2, 2);
+            data = data.Replace(@"\", "");
 
-                    savesData = JsonUtility.FromJson<JsonSaves>(data);
-                    Message("Load YG Complete");
+            savesData = JsonUtility.FromJson<SavesYG>(data);
+            Message("Load YG Complete");
 
-                    GetDataEvent?.Invoke();
+            _SDKEnabled = true;
+            GetDataEvent?.Invoke();
 
-                    if (infoYG.LocalizationEnable && infoYG.callingLanguageCheck == InfoYG.CallingLanguageCheck.EveryGameLaunch)
-                        _LanguageRequest();
-                    else
-                        SwitchLangEvent?.Invoke(savesData.language);
-                }
+            if (infoYG.LocalizationEnable && infoYG.callingLanguageCheck == InfoYG.CallingLanguageCheck.EveryGameLaunch)
+                _LanguageRequest();
+            else
+                SwitchLangEvent?.Invoke(savesData.language);
+        }
 
-                public void ResetSaveCloud()
-                {
-                    Message("Reset Save Progress");
-                    savesData = new JsonSaves { isFirstSession = false };
+        public void ResetSaveCloud()
+        {
+            Message("Reset Save Progress");
+            savesData = new SavesYG { isFirstSession = false };
 
-                    if (infoYG.LocalizationEnable && infoYG.callingLanguageCheck == InfoYG.CallingLanguageCheck.FirstLaunchOnly)
-                        _LanguageRequest();
+            if (infoYG.LocalizationEnable && infoYG.callingLanguageCheck == InfoYG.CallingLanguageCheck.FirstLaunchOnly)
+                _LanguageRequest();
 
-                    GetDataEvent?.Invoke();
-                }
+            _SDKEnabled = true;
+            GetDataEvent?.Invoke();
+        }
         #endregion Loading progress
 
         #region Language
-                public void SetLanguage(string language)
-                {
-                    string lang = "en";
+        public void SetLanguage(string language)
+        {
+            string lang = "en";
 
-                    switch (language)
-                    {
-                        case "ru":
-                            if (infoYG.languages.ru)
-                                lang = language;
-                            break;
-                        case "en":
-                            if (infoYG.languages.en)
-                                lang = language;
-                            break;
-                        case "tr":
-                            if (infoYG.languages.tr)
-                                lang = language;
-                            else lang = "ru";
-                            break;
-                        case "az":
-                            if (infoYG.languages.az)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "be":
-                            if (infoYG.languages.be)
-                                lang = language;
-                            else lang = "ru";
-                            break;
-                        case "he":
-                            if (infoYG.languages.he)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "hy":
-                            if (infoYG.languages.hy)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "ka":
-                            if (infoYG.languages.ka)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "et":
-                            if (infoYG.languages.et)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "fr":
-                            if (infoYG.languages.fr)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "kk":
-                            if (infoYG.languages.kk)
-                                lang = language;
-                            else lang = "ru";
-                            break;
-                        case "ky":
-                            if (infoYG.languages.ky)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "lt":
-                            if (infoYG.languages.lt)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "lv":
-                            if (infoYG.languages.lv)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "ro":
-                            if (infoYG.languages.ro)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "tg":
-                            if (infoYG.languages.tg)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "tk":
-                            if (infoYG.languages.tk)
-                                lang = language;
-                            else lang = "en";
-                            break;
-                        case "uk":
-                            if (infoYG.languages.uk)
-                                lang = language;
-                            else lang = "ru";
-                            break;
-                        case "uz":
-                            if (infoYG.languages.uz)
-                                lang = language;
-                            else lang = "ru";
-                            break;
-                        default:
-                            lang = "en";
-                            break;
-                    }
+            switch (language)
+            {
+                case "ru":
+                    if (infoYG.languages.ru)
+                        lang = language;
+                    break;
+                case "en":
+                    if (infoYG.languages.en)
+                        lang = language;
+                    break;
+                case "tr":
+                    if (infoYG.languages.tr)
+                        lang = language;
+                    else lang = "ru";
+                    break;
+                case "az":
+                    if (infoYG.languages.az)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "be":
+                    if (infoYG.languages.be)
+                        lang = language;
+                    else lang = "ru";
+                    break;
+                case "he":
+                    if (infoYG.languages.he)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "hy":
+                    if (infoYG.languages.hy)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "ka":
+                    if (infoYG.languages.ka)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "et":
+                    if (infoYG.languages.et)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "fr":
+                    if (infoYG.languages.fr)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "kk":
+                    if (infoYG.languages.kk)
+                        lang = language;
+                    else lang = "ru";
+                    break;
+                case "ky":
+                    if (infoYG.languages.ky)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "lt":
+                    if (infoYG.languages.lt)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "lv":
+                    if (infoYG.languages.lv)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "ro":
+                    if (infoYG.languages.ro)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "tg":
+                    if (infoYG.languages.tg)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "tk":
+                    if (infoYG.languages.tk)
+                        lang = language;
+                    else lang = "en";
+                    break;
+                case "uk":
+                    if (infoYG.languages.uk)
+                        lang = language;
+                    else lang = "ru";
+                    break;
+                case "uz":
+                    if (infoYG.languages.uz)
+                        lang = language;
+                    else lang = "ru";
+                    break;
+                default:
+                    lang = "en";
+                    break;
+            }
 
-                    if (lang == "en" && !infoYG.languages.en)
-                        lang = "ru";
-                    else if (lang == "ru" && !infoYG.languages.ru)
-                        lang = "en";
+            if (lang == "en" && !infoYG.languages.en)
+                lang = "ru";
+            else if (lang == "ru" && !infoYG.languages.ru)
+                lang = "en";
 
-                    Message("Language Request: Lang - " + lang);
+            Message("Language Request: Lang - " + lang);
 
-                    savesData.language = lang;
+            savesData.language = lang;
 
-                    SwitchLangEvent?.Invoke(lang);
-                }
+            SwitchLangEvent?.Invoke(lang);
+        }
         #endregion Language
 
         #region Environment Data
-                public void SetEnvironmentData(string data)
-                {
-                    EnvironmentData = JsonUtility.FromJson<JsonEnvironmentData>(data);
-                }
+        public void SetEnvironmentData(string data)
+        {
+            EnvironmentData = JsonUtility.FromJson<JsonEnvironmentData>(data);
+        }
         #endregion Environment Data
 
         #region Leaderboard
-                public delegate void UpdateLB(
-                    string name,
-                    string description,
-                    int[] rank,
-                    string[] photo,
-                    string[] playersName,
-                    int[] scorePlayers,
-                    bool auth);
+        public delegate void UpdateLB(
+            string name,
+            string description,
+            int[] rank,
+            string[] photo,
+            string[] playersName,
+            int[] scorePlayers,
+            bool auth);
 
-                public static event UpdateLB UpdateLbEvent;
+        public static event UpdateLB UpdateLbEvent;
 
-                JsonLB jsonLB = new JsonLB();
+        JsonLB jsonLB = new JsonLB();
 
-                int[] rank;
-                string[] photo;
-                string[] playersName;
-                int[] scorePlayers;
+        int[] rank;
+        string[] photo;
+        string[] playersName;
+        int[] scorePlayers;
 
-                public void LeaderboardEntries(string data)
-                {
-                    jsonLB = JsonUtility.FromJson<JsonLB>(data);
+        public void LeaderboardEntries(string data)
+        {
+            jsonLB = JsonUtility.FromJson<JsonLB>(data);
 
-                    rank = jsonLB.rank;
-                    photo = jsonLB.photo;
-                    playersName = jsonLB.playersName;
-                    scorePlayers = jsonLB.scorePlayers;
+            rank = jsonLB.rank;
+            photo = jsonLB.photo;
+            playersName = jsonLB.playersName;
+            scorePlayers = jsonLB.scorePlayers;
 
-                    UpdateLbEvent?.Invoke(
-                        jsonLB.nameLB.ToString(),
-                        jsonLB.entries.ToString(),
-                        rank,
-                        photo,
-                        playersName,
-                        scorePlayers,
-                        _auth);
-                }
+            UpdateLbEvent?.Invoke(
+                jsonLB.nameLB.ToString(),
+                jsonLB.entries.ToString(),
+                rank,
+                photo,
+                playersName,
+                scorePlayers,
+                _auth);
+        }
 
-                public void InitializedLB()
-                {
-                    UpdateLbEvent?.Invoke("initialized", "no data", rank, photo, playersName, scorePlayers, _auth);
-                    _initializedLB = true;
-                }
+        public void InitializedLB()
+        {
+            UpdateLbEvent?.Invoke("initialized", "no data", rank, photo, playersName, scorePlayers, _auth);
+            _initializedLB = true;
+        }
         #endregion Leaderboard
 
 
         // The rest
 
         #region Update
-                int delayFirstCalls;
-                static float timerShowAd;
-                private void Update()
-                {
-                    // Таймер для обработки показа Fillscreen рекламы
-                    timerShowAd += Time.unscaledDeltaTime;
+        int delayFirstCalls;
+        static float timerShowAd;
 
-                    // Задержка первых вызовов 
-                    if (delayFirstCalls < 20)
-                    {
-                        delayFirstCalls++;
-                        if (delayFirstCalls == 20)
-                            FirstСalls();
-                    }
-                }
+        private void Update()
+        {
+            // Таймер для обработки показа Fillscreen рекламы
+            timerShowAd += Time.unscaledDeltaTime;
+
+            // Задержка вызова метода FirstСalls
+            if (delayFirstCalls < 20)
+            {
+                delayFirstCalls++;
+                if (delayFirstCalls == 20)
+                    FirstСalls();
+            }
+        }
         #endregion Update
 
         #region Json
-                public class JsonAuth
-                {
-                    public string playerAuth;
-                    public string playerName;
-                    public string playerId;
-                    public string playerPhoto;
-                }
+        public class JsonAuth
+        {
+            public string playerAuth;
+            public string playerName;
+            public string playerId;
+            public string playerPhoto;
+        }
 
-                public class JsonLB
-                {
-                    public string nameLB;
-                    public string entries;
-                    public int[] rank;
-                    public string[] photo;
-                    public string[] playersName;
-                    public int[] scorePlayers;
-                }
+        public class JsonLB
+        {
+            public string nameLB;
+            public string entries;
+            public int[] rank;
+            public string[] photo;
+            public string[] playersName;
+            public int[] scorePlayers;
+        }
 
-                public class JsonEnvironmentData
-                {
-                    public string domain = "ru";
-                    public string deviceType = "desktop";
-                    public bool isMobile;
-                    public bool isDesktop;
-                    public bool isTablet;
-                    public bool isTV;
-                }
-
-                [System.Serializable]
-                public class JsonSaves
-                {
-                    public bool isFirstSession = true;
-                    public string language = "ru";
-
-                    // Ваши сохранения
-                    public int money = 1;
-                    public string newPlayerName = "Hello!";
-                    public bool[] openLevels = new bool[3];
-                }
+        public class JsonEnvironmentData
+        {
+            public string domain;
+            public string deviceType = "desktop";
+            public bool isMobile;
+            public bool isDesktop;
+            public bool isTablet;
+            public bool isTV;
+            public string appID;
+            public string browserLang;
+            public string payload;
+        }
         #endregion Json
     }
 }

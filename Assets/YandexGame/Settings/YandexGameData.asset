@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa747916aa66674d96ea40ca8a480b2, type: 3}
   m_Name: YandexGameData
   m_EditorClassIdentifier: 
-  scopes: 1
+  scopes: 0
   playerPhotoSize: 0
-  leaderboardEnable: 1
-  checkAdblock: 0
-  fullscreenAdChallenge: 1
+  leaderboardEnable: 0
+  siteLock: 1
+  checkAdblock: 1
+  fullscreenAdChallenge: 0
   LocalizationEnable: 1
-  autolocationInspector: 1
   callingLanguageCheck: 0
+  translateMethod: 0
+  CSVFileTranslate:
+    format: 0
+    name: TranslateCSV
   languages:
     ru: 1
     en: 1
@@ -40,25 +44,61 @@ MonoBehaviour:
     tk: 0
     uk: 0
     uz: 0
+    es: 0
+    pt: 0
+    ar: 0
+    id: 0
+    ja: 0
+    it: 0
+    de: 0
+    hi: 0
   fonts:
-    defaultFont: {fileID: 0}
-    ru: {fileID: 0}
-    en: {fileID: 0}
-    tr: {fileID: 0}
-    az: {fileID: 0}
-    be: {fileID: 0}
-    he: {fileID: 0}
-    hy: {fileID: 0}
-    ka: {fileID: 0}
-    et: {fileID: 0}
-    fr: {fileID: 0}
-    kk: {fileID: 0}
-    ky: {fileID: 0}
-    lt: {fileID: 0}
-    lv: {fileID: 0}
-    ro: {fileID: 0}
-    tg: {fileID: 0}
-    tk: {fileID: 0}
-    uk: {fileID: 0}
-    uz: {fileID: 0}
-  debug: 1
+    defaultFont:
+    - {fileID: 0}
+    ru:
+    - {fileID: 0}
+    en:
+    - {fileID: 0}
+    tr:
+    - {fileID: 0}
+    az:
+    - {fileID: 0}
+    be:
+    - {fileID: 0}
+    he:
+    - {fileID: 0}
+    hy:
+    - {fileID: 0}
+    ka:
+    - {fileID: 0}
+    et:
+    - {fileID: 0}
+    fr:
+    - {fileID: 0}
+    kk:
+    - {fileID: 0}
+    ky:
+    - {fileID: 0}
+    lt:
+    - {fileID: 0}
+    lv:
+    - {fileID: 0}
+    ro:
+    - {fileID: 0}
+    tg:
+    - {fileID: 0}
+    tk:
+    - {fileID: 0}
+    uk:
+    - {fileID: 0}
+    uz:
+    - {fileID: 0}
+    es: []
+    pt: []
+    ar: []
+    id: []
+    ja: []
+    it: []
+    de: []
+    hi: []
+  debug: 0
