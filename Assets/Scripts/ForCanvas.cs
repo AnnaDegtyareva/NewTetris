@@ -26,8 +26,18 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] List<Piece> trackingPieces = new List<Piece>();
     //Money
     [SerializeField] public Text MoneyText;
-    [SerializeField] public int money;
     public int countMoney = 1;
+    [SerializeField] public int money
+    {
+        get { return _money; }
+        set
+        {
+            _money = value;
+            MoneyText.text = _money.ToString();
+            MoneyTextForShop.text = _money.ToString();
+        }
+    }
+    private int _money;
     //FinishText
     [SerializeField] public Text MoneyTextForShop;
     //TextQuantityMoneyForShop
@@ -44,6 +54,11 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] GameObject CanvasForPause;
     //music
     [SerializeField] Music Music;
+    //Score
+    [SerializeField] GameObject ScoreScreen;
+    [SerializeField] public Text scoreText;
+    [SerializeField] public int score;
+
 
     //cloud saves (load)
     private void Awake()
@@ -54,6 +69,9 @@ public class ForCanvas : MonoBehaviour
     {
         money = YandexGame.savesData.money;
         MoneyText.text = money.ToString();
+
+        score = YandexGame.savesData.score;
+        scoreText.text = score.ToString();
 
         PrintSaveSkins();
 
@@ -149,9 +167,9 @@ public class ForCanvas : MonoBehaviour
     }
     private void Update()
     {
-        MoneyText.text = money.ToString();
-        MoneyTextForShop.text = money.ToString();
-        SkinsTextForSkins.text = countSkins.ToString();
+        //MoneyText.text = money.ToString();
+        //MoneyTextForShop.text = money.ToString();
+        //SkinsTextForSkins.text = countSkins.ToString(); 
     }
     public void Help()
     {

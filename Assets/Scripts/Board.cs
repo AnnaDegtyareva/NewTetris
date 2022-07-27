@@ -159,13 +159,16 @@ public class Board : MonoBehaviour
             this.tilemap.SetTile(position, null);
         }
         ForCanvas.money += ForCanvas.countMoney;
+        ForCanvas.score++;
         //PlayerPrefs.SetInt("Money", ForCanvas.money);
 
         YandexGame.savesData.money = ForCanvas.money;
+        YandexGame.savesData.score = ForCanvas.score;
 
         YandexGame.SaveProgress();
 
         ForCanvas.MoneyText.text = ForCanvas.money.ToString();
+        ForCanvas.scoreText.text = ForCanvas.score.ToString();
 
         while (row < bounds.yMax)
         {
