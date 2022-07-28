@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Assets/YandexGame/WorkingData/saveyg.yg
+Assets/YandexGame/Addons/JsonDotNet.unitypackage.meta
+Assembly-CSharp.csproj
