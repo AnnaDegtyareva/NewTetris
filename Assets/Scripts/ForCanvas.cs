@@ -58,7 +58,9 @@ public class ForCanvas : MonoBehaviour
     //Score
     [SerializeField] GameObject ScoreScreen;
     [SerializeField] public Text scoreText;
+    [SerializeField] public Text BestScoreText;
     [SerializeField] public int score;
+    [SerializeField] public int BestScore;
 
 
     //cloud saves (load)
@@ -71,8 +73,8 @@ public class ForCanvas : MonoBehaviour
         money = YandexGame.savesData.money;
         MoneyText.text = money.ToString();
 
-        score = YandexGame.savesData.score;
-        scoreText.text = score.ToString();
+        BestScore = YandexGame.savesData.score;
+        BestScoreText.text = BestScore.ToString();
 
         PrintSaveSkins();
 

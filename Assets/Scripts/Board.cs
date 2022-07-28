@@ -60,6 +60,8 @@ public class Board : MonoBehaviour
     private void GameOver()
     {
         this.tilemap.ClearAllTiles();
+        ForCanvas.score = 0;
+        ForCanvas.scoreText.text = "0";
     }
 
 
@@ -160,15 +162,20 @@ public class Board : MonoBehaviour
         }
         ForCanvas.money += ForCanvas.countMoney;
         ForCanvas.score++;
+        if (ForCanvas.score > ForCanvas.BestScore)
+        {
+            ForCanvas.BestScore = ForCanvas.score;
+        }
         //PlayerPrefs.SetInt("Money", ForCanvas.money);
 
         YandexGame.savesData.money = ForCanvas.money;
-        YandexGame.savesData.score = ForCanvas.score;
+        YandexGame.savesData.score = ForCanvas.BestScore;
 
         YandexGame.SaveProgress();
 
         ForCanvas.MoneyText.text = ForCanvas.money.ToString();
         ForCanvas.scoreText.text = ForCanvas.score.ToString();
+        ForCanvas.BestScoreText.text = ForCanvas.BestScore.ToString();
 
         while (row < bounds.yMax)
         {
