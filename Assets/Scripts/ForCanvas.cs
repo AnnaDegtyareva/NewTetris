@@ -61,7 +61,8 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] public Text BestScoreText;
     [SerializeField] public int score;
     [SerializeField] public int BestScore;
-
+    //
+    [SerializeField] public LeaderboardYG leaderboard;
 
     //cloud saves (load)
     private void Awake()
@@ -140,6 +141,7 @@ public class ForCanvas : MonoBehaviour
         StartCanvas.SetActive(true);
         SkinsCanvas.SetActive(false);
         ShopCanvas.SetActive(false);
+        ScoreScreen.SetActive(false);
         //on and off boards
         BoardsSwitcher(0);
         //money
@@ -166,6 +168,12 @@ public class ForCanvas : MonoBehaviour
         Pause.SetActive(true);
         CanvasForPause.SetActive(false);
         PrintSaveSkins();
+        if (score >= BestScore)
+        {
+            leaderboard.NewScore(score);
+            leaderboard.UpdateLB();
+        }
+        leaderboard.UpdateLB();
 
     }
     private void Update()
@@ -198,6 +206,14 @@ public class ForCanvas : MonoBehaviour
         Time.timeScale = 0f;
         banner.ActivityRTB(false);
     }
+    public void Record()
+    {
+        ScoreScreen.SetActive(true);
+
+        SetPause(true);
+        Time.timeScale = 0f;
+        banner.ActivityRTB(false);
+    }
     public void FreeMoney()
     {
         //On AD
@@ -216,6 +232,7 @@ public class ForCanvas : MonoBehaviour
         SkinsCanvas.SetActive(false);
         ShopCanvas.SetActive(false);
         HelpCanvas.SetActive(false);
+        ScoreScreen.SetActive(false);
 
         SetPause(false);
         Time.timeScale = 1f;
