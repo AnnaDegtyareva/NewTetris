@@ -7,6 +7,7 @@ using YG;
 public class ForCanvas : MonoBehaviour
 {
     public static bool IsPause = false;
+    public BannerYG banner;
 
     //Canvas
     [SerializeField] GameObject StartCanvas;
@@ -177,6 +178,7 @@ public class ForCanvas : MonoBehaviour
 
         SetPause(true);
         Time.timeScale = 0f;
+        banner.ActivityRTB(false);
     }
     public void Skins()
     {
@@ -184,6 +186,7 @@ public class ForCanvas : MonoBehaviour
 
         SetPause(true);
         Time.timeScale = 0f;
+        banner.ActivityRTB(false);
     }
     public void Shop()
     {
@@ -191,6 +194,7 @@ public class ForCanvas : MonoBehaviour
 
         SetPause(true);
         Time.timeScale = 0f;
+        banner.ActivityRTB(false);
     }
     public void FreeMoney()
     {
@@ -213,6 +217,7 @@ public class ForCanvas : MonoBehaviour
 
         SetPause(false);
         Time.timeScale = 1f;
+        banner.ActivityRTB(true);
     }
 
     //functions for dress skins
@@ -363,6 +368,10 @@ public class ForCanvas : MonoBehaviour
             YandexGame.SaveProgress();
             //PlayerPrefs.SetInt("Money", money);
             Update();
+        }
+        if (IsPause)
+        {
+            banner.ActivityRTB(false);
         }
     }
 
