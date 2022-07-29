@@ -165,6 +165,8 @@ public class Board : MonoBehaviour
         if (ForCanvas.score > ForCanvas.BestScore)
         {
             ForCanvas.BestScore = ForCanvas.score;
+            ForCanvas.leaderboard.NewScore(ForCanvas.BestScore);
+            ForCanvas.leaderboard.UpdateLB();
         }
         //PlayerPrefs.SetInt("Money", ForCanvas.money);
 

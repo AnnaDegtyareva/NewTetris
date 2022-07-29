@@ -168,11 +168,6 @@ public class ForCanvas : MonoBehaviour
         Pause.SetActive(true);
         CanvasForPause.SetActive(false);
         PrintSaveSkins();
-        if (score >= BestScore)
-        {
-            leaderboard.NewScore(score);
-            leaderboard.UpdateLB();
-        }
         leaderboard.UpdateLB();
 
     }
@@ -211,7 +206,12 @@ public class ForCanvas : MonoBehaviour
         ScoreScreen.SetActive(true);
 
         SetPause(true);
+
+        leaderboard.UpdateLB();
+        leaderboard.NewScore(BestScore);
         Time.timeScale = 0f;
+
+        
         banner.ActivityRTB(false);
     }
     public void FreeMoney()
