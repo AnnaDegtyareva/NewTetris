@@ -43,8 +43,17 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] public Text MoneyTextForShop;
     //TextQuantityMoneyForShop
     [SerializeField] public Text SkinsTextForSkins;
-    //TextQuantitySkin
-    public int countSkins = 0;
+    [SerializeField] public int skins = 1;
+    [SerializeField] public int countSkins
+    {
+        get { return _countSkins; }
+        set
+        {
+            _countSkins = value;
+            SkinsTextForSkins.text = value.ToString();
+        }
+    }
+    private int _countSkins;
     //helpCanvas
     [SerializeField] GameObject HelpCanvas;
     //number for prize
@@ -53,6 +62,7 @@ public class ForCanvas : MonoBehaviour
     [SerializeField] GameObject Pause;
     [SerializeField] GameObject Resume;
     [SerializeField] GameObject CanvasForPause;
+    bool PauseOrResume = false;
     //music
     [SerializeField] Music Music;
     //Score
@@ -108,7 +118,7 @@ public class ForCanvas : MonoBehaviour
             BoardsSwitcher(index);
             ButtonsForBuySkins[index].SetActive(false);
             ButtonsForDressSkins[index].SetActive(true);
-            countSkins++;
+            countSkins+=1;
             countMoney = CountMoney;
             money -= price;
             YandexGame.savesData.shop[index] = 1;
@@ -129,7 +139,8 @@ public class ForCanvas : MonoBehaviour
                 BoardsSwitcher(i);
                 ButtonsForBuySkins[i].SetActive(false);
                 ButtonsForDressSkins[i].SetActive(true);
-                countSkins++;
+                countSkins+=1;
+                print(countSkins);
             }
         }
     }
@@ -159,8 +170,6 @@ public class ForCanvas : MonoBehaviour
             //off all boards
             ButtonsForBuySkins[i].SetActive(true);
         }
-        //Skins
-        countSkins = 1;
         //Help
         HelpCanvas.SetActive(false);
         //PauseAndResume
@@ -233,10 +242,13 @@ public class ForCanvas : MonoBehaviour
         ShopCanvas.SetActive(false);
         HelpCanvas.SetActive(false);
         ScoreScreen.SetActive(false);
-
-        SetPause(false);
-        Time.timeScale = 1f;
-        banner.ActivityRTB(true);
+        if(PauseOrResume == false)
+        {
+            SetPause(false);
+            Time.timeScale = 1f;
+            banner.ActivityRTB(true);
+        }
+        
     }
 
     //functions for dress skins
@@ -401,6 +413,7 @@ public class ForCanvas : MonoBehaviour
         Resume.SetActive(true);
         Pause.SetActive(false);
         Music.PauseMusic(true);
+        PauseOrResume = true;
 
         SetPause(true);
     }
@@ -411,6 +424,7 @@ public class ForCanvas : MonoBehaviour
         Resume.SetActive(false);
         Pause.SetActive(true);
         Music.PauseMusic(false);
+        PauseOrResume = false;
 
         SetPause(false);
     }
