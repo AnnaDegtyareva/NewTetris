@@ -371,6 +371,10 @@ public class ForCanvas : MonoBehaviour
         //buy skin
         BuySkins(9, 1234567890, 500);
     }
+    public void OffBanner()
+    {
+        banner.ActivityRTB(false);
+    }
     public void Prize()
     {
         //On AD
