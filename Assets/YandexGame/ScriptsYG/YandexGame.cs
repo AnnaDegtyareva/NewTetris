@@ -272,12 +272,12 @@ namespace YG
 
         #region Authorization Check
         [DllImport("__Internal")]
-        private static extern void AuthorizationCheck(string playerPhotoSize, bool scopes);
+        private static extern void AuthorizationCheck(string playerPhotoSize, bool scopes, bool staticRBTInGame);
 
         public void _AuthorizationCheck()
         {
 #if !UNITY_EDITOR
-            AuthorizationCheck( _photoSize, infoYG.scopes);
+            AuthorizationCheck( _photoSize, infoYG.scopes, infoYG.staticRBTInGame);
 #else
             SetAuthorization(@"{""playerAuth""" + ": " + @"""resolved""," + @"""playerName""" + ": " + @"""Ivan"", " + @"""playerId""" + ": " + @"""tOpLpSh7i8QG8Voh/SuPbeS4NKTj1OxATCTKQF92H4c="", " + @"""playerPhoto""" + ": " + @"""https://avatars.mds.yandex.net/get-yapic/35885/sQA4bpZ5JEWQkyz2x15TzAIO2kg-1/islands-300""}");
 #endif
@@ -665,8 +665,7 @@ namespace YG
             {
 #if !UNITY_EDITOR
                 _InitLeaderboard();
-#endif
-#if UNITY_EDITOR
+#else
                 InitializedLB();
 #endif
             }

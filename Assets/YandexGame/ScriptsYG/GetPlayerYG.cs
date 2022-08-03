@@ -8,16 +8,17 @@ namespace YG
         public Text textPlayerName;
         public ImageLoadYG imageLoadPlayerPhoto;
 
-        private void OnEnable() => YandexGame.GetDataEvent += GetPlayerName;
-        private void OnDisable() => YandexGame.GetDataEvent -= GetPlayerName;
-
-        private void Start()
+        private void OnEnable()
         {
+            YandexGame.GetDataEvent += GetPlayerName;
+
             if (YandexGame.SDKEnabled == true)
             {
                 GetPlayerName();
             }
         }
+
+        private void OnDisable() => YandexGame.GetDataEvent -= GetPlayerName;
 
         public void GetPlayerName()
         {

@@ -1,35 +1,49 @@
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityToolbag;
 
 namespace YG 
 {
     public class BannerYG : MonoBehaviour
     {
-        public enum RTBNumber { One, Two, Three, Four };
-        [Tooltip("Всего доступно четыре баннера. Выберите номер данного баннера")]
+        public enum RTBNumber { One, Two, Three, Four, Five, Six };
+        [Tooltip("Всего доступно шесть баннеров. Выберите номер данного баннера.")]
         public RTBNumber RTB_Number;
         public enum Device { desktopAndMobile, onlyDesktop, onlyMobile };
+        [Tooltip(" Desktop And Mobile - Отображение баннера на всех устройствах.\n Only Desktop - Отображение баннера только на компьютере.\n Only Mobile - Отображение баннера только на мобильных устройствах (телефонах и планшетах).")]
         public Device device;
-        public float minWidth = 20f, minHeight = 20f;
+        [Tooltip(" Минимальный размер блока. RBT-блок не будет меньше установленного значения.\n X - минимальная ширина.\n Y - минимальная высота.")]
+        public Vector2 minSize = new Vector2(20, 20);
 
-        RectTransform rt;
+        [HideInInspector]
+        public RectTransform rt;
+        CanvasScaler scaler;
 
-        static float timerRBT1 = 31f;
-        static float timerRBT2 = 31f;
-        static float timerRBT3 = 31f;
-        static float timerRBT4 = 31f;
+#if UNITY_EDITOR
+        public enum ScaleMode { ConstantPixelSize, ScaleWithScreenSize };
+        [Tooltip("Режим масштабирования блоков.\nНастраивайте масштаб здесь, не изменяйте параметры компонентов Canvas'а!")]
+        public ScaleMode UIScaleMode;
+
+        [ConditionallyVisible(nameof(UIScaleMode))]
+        public Vector2 referenceResolution = new Vector2(1920, 1080);
+        public enum MatchMode { Width, Height };
+        [ConditionallyVisible(nameof(UIScaleMode))]
+        public MatchMode Match;
+#else
+        static float timerRBT1 = 31;
+        static float timerRBT2 = 31;
+        static float timerRBT3 = 31;
+        static float timerRBT4 = 31;
+        static float timerRBT5 = 31;
+        static float timerRBT6 = 31;
 
         private void Awake()
         {
-#if !UNITY_EDITOR
-            rt = transform.GetChild(0).GetComponent<RectTransform>();
+            rt = (RectTransform)transform.GetChild(0);
             rt.GetComponent<RawImage>().color = Color.clear;
-#endif
+            rt.pivot = new Vector2(0, 1);
         }
-
-#if !UNITY_EDITOR
-        Vector2 ScreenSize;
 
         private void OnEnable()
         {
@@ -52,22 +66,22 @@ namespace YG
             YandexGame.OpenVideoEvent -= DeactivateRTB;
             YandexGame.CloseVideoEvent -= ActivateRTB;
             YandexGame.CheaterVideoEvent -= ActivateRTB;
-
             DeactivateRTB();
+        }
+
+        private void OnRectTransformDimensionsChange()
+        {
+            if (CheckDevice())
+            {
+                CancelInvoke("RecalculateRect");
+                Invoke("RecalculateRect", 0.5f);
+            }
         }
 
         private void Update()
         {
             if (CheckDevice())
             {
-                if (ScreenSize.x != Screen.width || ScreenSize.y != Screen.height)
-                {
-                    RecalculateRect();
-                }
-
-                ScreenSize.x = Screen.width;
-                ScreenSize.y = Screen.height;
-
                 // Обновление RTB-блоков
                 if (YandexGame.SDKEnabled)
                 {
@@ -78,6 +92,7 @@ namespace YG
                         if (timerRBT1 >= 31)
                         {
                             timerRBT1 = 0;
+                            RecalculateRect();
                             Invoke("RenderRTB1", 0.01f);
                         }
                     }
@@ -88,6 +103,7 @@ namespace YG
                         if (timerRBT2 >= 31)
                         {
                             timerRBT2 = 0;
+                            RecalculateRect();
                             Invoke("RenderRTB2", 0.01f);
                         }
                     }
@@ -98,6 +114,7 @@ namespace YG
                         if (timerRBT3 >= 31)
                         {
                             timerRBT3 = 0;
+                            RecalculateRect();
                             Invoke("RenderRTB3", 0.01f);
                         }
                     }
@@ -108,14 +125,36 @@ namespace YG
                         if (timerRBT4 >= 31)
                         {
                             timerRBT4 = 0;
+                            RecalculateRect();
                             Invoke("RenderRTB4", 0.01f);
+                        }
+                    }
+                    else if (RTB_Number == RTBNumber.Five)
+                    {
+                        timerRBT5 += Time.unscaledDeltaTime;
+
+                        if (timerRBT5 >= 31)
+                        {
+                            timerRBT5 = 0;
+                            RecalculateRect();
+                            Invoke("RenderRTB5", 0.01f);
+                        }
+                    }
+                    else if (RTB_Number == RTBNumber.Six)
+                    {
+                        timerRBT6 += Time.unscaledDeltaTime;
+
+                        if (timerRBT6 >= 31)
+                        {
+                            timerRBT6 = 0;
+                            RecalculateRect();
+                            Invoke("RenderRTB6", 0.01f);
                         }
                     }
                 }
             }
         }
 #endif
-
         public void RecalculateRect()
         {
             if (CheckDevice())
@@ -123,68 +162,57 @@ namespace YG
                 if (!rt)
                     rt = transform.GetChild(0).GetComponent<RectTransform>();
 
+                if (!scaler)
+                    scaler = GetComponent<CanvasScaler>();
+
                 float width = rt.rect.width;
                 float height = rt.rect.height;
 
-                if (width < minWidth) width = minWidth;
-                if (height < minHeight) height = minHeight;
+                float left = rt.localPosition.x;
+                float top = -rt.localPosition.y;
 
-                string _width = width.ToString() + "px";
-                string _height = height.ToString() + "px";
+                if (scaler.uiScaleMode == CanvasScaler.ScaleMode.ScaleWithScreenSize)
+                {
+                    Vector2 multResolution = new Vector2(Screen.width / scaler.referenceResolution.x, Screen.height / scaler.referenceResolution.y);
 
-                string _left = "50%";
-                string _right = "0px";
-                string _top = "50%";
-                string _bottom = "0px";
+                    if (scaler.matchWidthOrHeight == 0)
+                    {
+                        width *= multResolution.x;
+                        height *= multResolution.x;
+                        left *= multResolution.x;
+                        top *= multResolution.x;
+                    }
+                    else if (scaler.matchWidthOrHeight == 1)
+                    {
+                        width *= multResolution.y;
+                        height *= multResolution.y;
+                        left *= multResolution.y;
+                        top *= multResolution.y;
+                    }
+                }
 
-                string _offsetX = rt.localPosition.x.ToString();
-                string _offsetY = (-rt.localPosition.y).ToString();
-                string _offset = $"translate({_offsetX.Replace(",", ".")}px, {_offsetY.Replace(",", ".")}px)";
+                if (width < minSize.x) width = minSize.x;
+                if (height < minSize.y) height = minSize.y;
 
-                if (RTB_Number == RTBNumber.One)
-                {
-                    RecalculateRTB1(
-                        _width.Replace(",", "."),
-                        _height.Replace(",", "."),
-                        _left.Replace(",", "."),
-                        _right.Replace(",", "."),
-                        _top.Replace(",", "."),
-                        _bottom.Replace(",", "."),
-                        _offset);
-                }
-                else if (RTB_Number == RTBNumber.Two)
-                {
-                    RecalculateRTB2(
-                        _width.Replace(",", "."),
-                        _height.Replace(",", "."),
-                        _left.Replace(",", "."),
-                        _right.Replace(",", "."),
-                        _top.Replace(",", "."),
-                        _bottom.Replace(",", "."),
-                        _offset);
-                }
-                else if (RTB_Number == RTBNumber.Three)
-                {
-                    RecalculateRTB3(
-                        _width.Replace(",", "."),
-                        _height.Replace(",", "."),
-                        _left.Replace(",", "."),
-                        _right.Replace(",", "."),
-                        _top.Replace(",", "."),
-                        _bottom.Replace(",", "."),
-                        _offset);
-                }
-                else if (RTB_Number == RTBNumber.Four)
-                {
-                    RecalculateRTB4(
-                        _width.Replace(",", "."),
-                        _height.Replace(",", "."),
-                        _left.Replace(",", "."),
-                        _right.Replace(",", "."),
-                        _top.Replace(",", "."),
-                        _bottom.Replace(",", "."),
-                        _offset);
-                }
+                width = 100 * width / Screen.width;
+                height = 100 * height / Screen.height;
+                left = 100 * (Screen.width / 2 + left) / Screen.width;
+                top = 100 * (Screen.height / 2 + top) / Screen.height;
+
+                left = Mathf.Clamp(left, 0, 100);
+                top = Mathf.Clamp(top, 0, 100);
+
+                string _width = width.ToString().Replace(",", ".") + "%";
+                string _height = height.ToString().Replace(",", ".") + "%";
+                string _left = left.ToString().Replace(",", ".") + "%";
+                string _top = top.ToString().Replace(",", ".") + "%";
+
+                if (RTB_Number == RTBNumber.One) RecalculateRTB1(_width, _height, _left, _top);
+                else if (RTB_Number == RTBNumber.Two) RecalculateRTB2(_width, _height, _left, _top);
+                else if (RTB_Number == RTBNumber.Three) RecalculateRTB3(_width, _height, _left, _top);
+                else if (RTB_Number == RTBNumber.Four) RecalculateRTB4(_width, _height, _left, _top);
+                else if (RTB_Number == RTBNumber.Five) RecalculateRTB5(_width, _height, _left, _top);
+                else if (RTB_Number == RTBNumber.Six) RecalculateRTB6(_width, _height, _left, _top);
             }
         }
 
@@ -192,6 +220,9 @@ namespace YG
         {
             if (CheckDevice())
             {
+                if (state)
+                    RecalculateRect();
+
                 if (RTB_Number == RTBNumber.One)
                 {
                     ActivityRTB1(state);
@@ -208,9 +239,14 @@ namespace YG
                 {
                     ActivityRTB4(state);
                 }
-
-                if (state)
-                    RecalculateRect();
+                else if (RTB_Number == RTBNumber.Five)
+                {
+                    ActivityRTB5(state);
+                }
+                else if (RTB_Number == RTBNumber.Six)
+                {
+                    ActivityRTB6(state);
+                }
             }
         }
 
@@ -223,45 +259,55 @@ namespace YG
         void DeactivateRTB() => ActivityRTB(false);
         void DeactivateRTB(int id) => DeactivateRTB();
 
+        void RenderRBT()
+        {
+            if (RTB_Number == RTBNumber.One) RenderRTB1();
+            else if (RTB_Number == RTBNumber.Two) RenderRTB2();
+            else if (RTB_Number == RTBNumber.Three) RenderRTB3();
+            else if (RTB_Number == RTBNumber.Four) RenderRTB4();
+            else if (RTB_Number == RTBNumber.Five) RenderRTB5();
+            else if (RTB_Number == RTBNumber.Six) RenderRTB6();
+        }
+
         [DllImport("__Internal")]
         private static extern void RecalculateRTB1(
             string width,
             string height,
             string left,
-            string right,
-            string top,
-            string bottom,
-            string offset);
+            string top);
 
         [DllImport("__Internal")]
         private static extern void RecalculateRTB2(
             string width,
             string height,
             string left,
-            string right,
-            string top,
-            string bottom,
-            string offset);
+            string top);
 
         [DllImport("__Internal")]
         private static extern void RecalculateRTB3(
             string width,
             string height,
             string left,
-            string right,
-            string top,
-            string bottom,
-            string offset);
+            string top);
 
         [DllImport("__Internal")]
         private static extern void RecalculateRTB4(
             string width,
             string height,
             string left,
-            string right,
-            string top,
-            string bottom,
-            string offset);
+            string top);
+        [DllImport("__Internal")]
+        private static extern void RecalculateRTB5(
+            string width,
+            string height,
+            string left,
+            string top);
+        [DllImport("__Internal")]
+        private static extern void RecalculateRTB6(
+            string width,
+            string height,
+            string left,
+            string top);
 
 
         [DllImport("__Internal")]
@@ -276,6 +322,12 @@ namespace YG
         [DllImport("__Internal")]
         private static extern void ActivityRTB4(bool state);
 
+        [DllImport("__Internal")]
+        private static extern void ActivityRTB5(bool state);
+
+        [DllImport("__Internal")]
+        private static extern void ActivityRTB6(bool state);
+
 
         [DllImport("__Internal")]
         private static extern void RenderRTB1();
@@ -289,22 +341,38 @@ namespace YG
         [DllImport("__Internal")]
         private static extern void RenderRTB4();
 
+        [DllImport("__Internal")]
+        private static extern void RenderRTB5();
+
+        [DllImport("__Internal")]
+        private static extern void RenderRTB6();
+
+
+        static bool? allowDevice;
         bool CheckDevice()
         {
-            bool result = true;
-
-            if (device == Device.onlyDesktop)
+            if (allowDevice == null)
             {
-                if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
-                    result = false;
-            }
-            else if (device == Device.onlyMobile)
-            {
-                if (!YandexGame.EnvironmentData.isMobile && !YandexGame.EnvironmentData.isTablet)
-                    result = false;
-            }
+                bool result = true;
 
-            return result;
+                if (device == Device.onlyDesktop)
+                {
+                    if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
+                        result = false;
+                }
+                else if (device == Device.onlyMobile)
+                {
+                    if (!YandexGame.EnvironmentData.isMobile && !YandexGame.EnvironmentData.isTablet)
+                        result = false;
+                }
+
+                allowDevice = result;
+                return result;
+            }
+            else
+            {
+                return allowDevice.Value;
+            }
         }
     }
 }

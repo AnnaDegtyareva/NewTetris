@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: KodlinkGameStudio
+  companyName: GameDev
   productName: NewTetris
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2
+  bundleVersion: 1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -309,10 +309,14 @@ PlayerSettings:
   openGLRequireES31AEP: 0
   openGLRequireES32: 0
   m_TemplateCustomTags:
-    BANNER_1: R-A-1771232-24
-    BANNER_2: 
-    BANNER_3: 
-    BANNER_4: 
+    BANNER_DYNAMIC_1: R-A-1771232-24
+    BANNER_DYNAMIC_2: 
+    BANNER_DYNAMIC_3: 
+    BANNER_DYNAMIC_4: 
+    BANNER_DYNAMIC_5: 
+    BANNER_DYNAMIC_6: 
+    BANNER_STATIC_1: 
+    BANNER_STATIC_2: 
   mobileMTRendering:
     Android: 1
     iPhone: 1

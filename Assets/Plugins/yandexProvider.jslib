@@ -1,8 +1,8 @@
 mergeInto(LibraryManager.library,
 {
-	AuthorizationCheck: function (playerPhotoSize, scopes)
+	AuthorizationCheck: function (playerPhotoSize, scopes, staticRBTinGame)
 	{
-		AuthorizationCheck(Pointer_stringify(playerPhotoSize), scopes);
+		AuthorizationCheck(Pointer_stringify(playerPhotoSize), scopes, staticRBTinGame);
 	},
 	
 	OpenAuthDialog: function (playerPhotoSize, scopes)
@@ -80,6 +80,16 @@ mergeInto(LibraryManager.library,
 		ActivityRTB4(state);
 	},
 	
+	ActivityRTB5: function(state)
+	{
+		ActivityRTB5(state);
+	},
+	
+	ActivityRTB6: function(state)
+	{
+		ActivityRTB6(state);
+	},
+	
 	RenderRTB1: function()
 	{
 		RenderRTB1();
@@ -100,52 +110,68 @@ mergeInto(LibraryManager.library,
 		RenderRTB4();
 	},
 	
-	RecalculateRTB1: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	RenderRTB5: function()
+	{
+		RenderRTB5();
+	},
+	
+	RenderRTB6: function()
+	{
+		RenderRTB6();
+	},
+	
+	RecalculateRTB1: function(_width, _height, _left, _top)
 	{
 		RecalculateRTB1(
 			Pointer_stringify(_width),
 			Pointer_stringify(_height),
 			Pointer_stringify(_left),
-			Pointer_stringify(_right),
-			Pointer_stringify(_top),
-			Pointer_stringify(_bottom),
-			Pointer_stringify(_offset));
+			Pointer_stringify(_top));
 	},
 	
-	RecalculateRTB2: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	RecalculateRTB2: function(_width, _height, _left, _top)
 	{
 		RecalculateRTB2(
 			Pointer_stringify(_width),
 			Pointer_stringify(_height),
 			Pointer_stringify(_left),
-			Pointer_stringify(_right),
-			Pointer_stringify(_top),
-			Pointer_stringify(_bottom),
-			Pointer_stringify(_offset));
+			Pointer_stringify(_top));
 	},
 	
-	RecalculateRTB3: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	RecalculateRTB3: function(_width, _height, _left, _top)
 	{
 		RecalculateRTB3(
 			Pointer_stringify(_width),
 			Pointer_stringify(_height),
 			Pointer_stringify(_left),
-			Pointer_stringify(_right),
-			Pointer_stringify(_top),
-			Pointer_stringify(_bottom),
-			Pointer_stringify(_offset));
+			Pointer_stringify(_top));
 	},
 	
-	RecalculateRTB4: function(_width, _height, _left, _right, _top, _bottom, _offset)
+	RecalculateRTB4: function(_width, _height, _left, _top)
 	{
 		RecalculateRTB4(
 			Pointer_stringify(_width),
 			Pointer_stringify(_height),
 			Pointer_stringify(_left),
-			Pointer_stringify(_right),
-			Pointer_stringify(_top),
-			Pointer_stringify(_bottom),
-			Pointer_stringify(_offset));
+			Pointer_stringify(_top));
+	},
+	
+	RecalculateRTB5: function(_width, _height, _left, _top)
+	{
+		RecalculateRTB5(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_top));
+	},
+	
+	RecalculateRTB6: function(_width, _height, _left, _top)
+	{
+		RecalculateRTB6(
+			Pointer_stringify(_width),
+			Pointer_stringify(_height),
+			Pointer_stringify(_left),
+			Pointer_stringify(_top));
 	},
 	
 	GetURLFromPage: function () {
