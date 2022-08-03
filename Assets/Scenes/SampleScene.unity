@@ -3117,10 +3117,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1633786693}
     m_Modifications:
+    - target: {fileID: 6759729122431224378, guid: 393137afd78171d428af27fd99ba6953, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: da2fc325b9b0f6e43b2cd8e517e8eaab, type: 3}
     - target: {fileID: 6759729122528873182, guid: 393137afd78171d428af27fd99ba6953, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.46069336
       objectReference: {fileID: 0}
+    - target: {fileID: 6759729122987043093, guid: 393137afd78171d428af27fd99ba6953, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: da2fc325b9b0f6e43b2cd8e517e8eaab, type: 3}
+    - target: {fileID: 6759729123075344323, guid: 393137afd78171d428af27fd99ba6953, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: da2fc325b9b0f6e43b2cd8e517e8eaab, type: 3}
     - target: {fileID: 6759729123162567661, guid: 393137afd78171d428af27fd99ba6953, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -10329,7 +10341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
       propertyPath: CloseVideoAd.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
       propertyPath: CheaterVideoAd.m_PersistentCalls.m_Calls.Array.size

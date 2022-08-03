@@ -377,6 +377,7 @@ public class ForCanvas : MonoBehaviour
     }
     public void Prize()
     {
+        Invoke("OffBanner", .05f);
         //On AD
         //Give random skin
         number = Random.Range(1, 15);
