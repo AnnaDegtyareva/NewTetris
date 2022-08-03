@@ -13934,7 +13934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 734471416269437842, guid: d74f3cd7d2c101247b04e292d5eb7870, type: 3}
       propertyPath: UIScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 734471416269437843, guid: d74f3cd7d2c101247b04e292d5eb7870, type: 3}
       propertyPath: m_Pivot.x

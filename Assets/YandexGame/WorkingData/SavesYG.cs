@@ -12,5 +12,6 @@ namespace YG
         public int[] shop = new int[11];
         public bool IsMusic = true;
         public int score = 0;
+        public int SkinId = 0;
     }
 }

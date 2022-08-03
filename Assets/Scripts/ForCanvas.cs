@@ -88,6 +88,7 @@ public class ForCanvas : MonoBehaviour
         BestScoreText.text = BestScore.ToString();
 
         PrintSaveSkins();
+        BoardsSwitcher(YandexGame.savesData.SkinId, false);
 
         if (YandexGame.savesData.IsMusic)
         {
@@ -99,8 +100,15 @@ public class ForCanvas : MonoBehaviour
         }
     }
 
-    public void BoardsSwitcher(int index)
+    public void BoardsSwitcher(int index, bool NeedSave)
     {
+        if (NeedSave)
+        {
+            YandexGame.savesData.SkinId = index;
+            YandexGame.SaveProgress();
+        }
+        boards[index].SpawnPiece();
+        trackingPieces[index].enabled = true;
         for (int i = 0; i < Boards.Count; i++)
         {
             //off all boards
@@ -115,7 +123,7 @@ public class ForCanvas : MonoBehaviour
     {
         if (money >= price)
         {
-            BoardsSwitcher(index);
+            BoardsSwitcher(index, true);
             ButtonsForBuySkins[index].SetActive(false);
             ButtonsForDressSkins[index].SetActive(true);
             countSkins+=1;
@@ -136,7 +144,9 @@ public class ForCanvas : MonoBehaviour
         {
             if (YandexGame.savesData.shop[i] == 1)
             {
-                BoardsSwitcher(i);
+                boards[i].SpawnPiece();
+                trackingPieces[i].enabled = true;
+                //BoardsSwitcher(i);
                 ButtonsForBuySkins[i].SetActive(false);
                 ButtonsForDressSkins[i].SetActive(true);
                 countSkins+=1;
@@ -147,6 +157,10 @@ public class ForCanvas : MonoBehaviour
 
     void Start()
     {
+        for (int i = 0; i < trackingPieces.Count; i++)
+        {
+            trackingPieces[i].enabled = false;
+        }
         //PlayerPrefs.DeleteAll();
         //On start canvas and off others canvas
         StartCanvas.SetActive(true);
@@ -154,7 +168,7 @@ public class ForCanvas : MonoBehaviour
         ShopCanvas.SetActive(false);
         ScoreScreen.SetActive(false);
         //on and off boards
-        BoardsSwitcher(0);
+        //BoardsSwitcher(0);
         //money
         //money = PlayerPrefs.GetInt("Money");
         //MoneyText.text = money.ToString();
@@ -176,7 +190,7 @@ public class ForCanvas : MonoBehaviour
         Resume.SetActive(false);
         Pause.SetActive(true);
         CanvasForPause.SetActive(false);
-        PrintSaveSkins();
+        //PrintSaveSkins();
         leaderboard.UpdateLB();
 
     }
@@ -255,56 +269,56 @@ public class ForCanvas : MonoBehaviour
     public void dressClassic()
     {
         //dress skin
-        BoardsSwitcher(0);
+        BoardsSwitcher(0, true);
     }
     public void dressStars()
     {
         //dress skin
-        BoardsSwitcher(1);
+        BoardsSwitcher(1, true);
     }
     public void dressFood()
     {
         //dress skin
-        BoardsSwitcher(2);
+        BoardsSwitcher(2, true);
     }
     public void dressLego()
     {
         //dress skin
-        BoardsSwitcher(3);
+        BoardsSwitcher(3, true);
     }
     public void dressFlowers()
     {
         //dress skin
-        BoardsSwitcher(4);
+        BoardsSwitcher(4, true);
     }
     public void dressHearts()
     {
         //dress skin
-        BoardsSwitcher(5);
+        BoardsSwitcher(5, true);
     }
     public void dressHelloKitty()
     {
         //dress skin
-        BoardsSwitcher(6);
+        BoardsSwitcher(6, true);
     }
     public void dressCrystal()
     {
         //dress skin
-        BoardsSwitcher(7);
+        BoardsSwitcher(7, true);
     }
     public void dressMeme()
     {
         //dress skin
-        BoardsSwitcher(8);
+        BoardsSwitcher(8, true);
     }    public void dressGradientHeart()
     {
         //dress skin
-        BoardsSwitcher(9);
+        BoardsSwitcher(9, true);
     }
     public void dressGradient()
     {
         //dress skin
-        BoardsSwitcher(10);
+        BoardsSwitcher(10, true);
     }
     //functions for buy skins
     public void buyStars()
@@ -433,5 +447,3 @@ public class ForCanvas : MonoBehaviour
         IsPause = value;
     }
 }
-
-

@@ -37,7 +37,7 @@ public class Board : MonoBehaviour
 
     private void Start()
     {
-        SpawnPiece();
+        //SpawnPiece();
     }
 
     public void SpawnPiece()
